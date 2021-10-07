@@ -1,0 +1,14 @@
+.footer-items{
+    width: 80%;
+    margin: 0 auto;
+}
+.li-item{
+    color: white;
+    list-style: none;
+}
+.logo{
+    color: white;
+}
+.copyright{
+    color: white;
+}
