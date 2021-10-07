@@ -9,9 +9,8 @@ import Slider from '../Slider/Slider';
 
 const HomeMain = () => {
     return (
-        <div>
+        <div style={{backgroundColor:"#141414"}}>
             <Navbar/>
-            <Header/>
             <Slider/>
             <Builder/>
             <Category/>
