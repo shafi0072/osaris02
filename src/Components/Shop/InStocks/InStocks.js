@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Navbar from '../../Shared/Navbar/Navbar'
 const InStocks = () => {
     return (
         <div>
-            <h1>In Stock</h1>
+            <Navbar/>
+            <h1>Comming Soon</h1>
         </div>
     );
 };

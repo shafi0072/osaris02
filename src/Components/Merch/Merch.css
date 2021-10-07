@@ -1,0 +1,11 @@
+.merch-container{
+    background-color: #141414;
+    color: white;
+}
+.march-title{
+    background-image: url(../../Resorce/Img/merchbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17% 0;
+}

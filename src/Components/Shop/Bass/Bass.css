@@ -1,0 +1,21 @@
+.bass-container{
+    background-color: #141414;
+    height: 100vh;
+}
+li{
+    list-style: none;
+}
+.card-container{
+    padding: 3%;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-image: linear-gradient(to top, #2c2c2c, #2b2b2b, #292929, #282828, #272727);background-color: ;
+}
+.card-img{
+    width: 37%;
+    display: block;
+    margin: 0 auto;
+    height: 40vh;
+}

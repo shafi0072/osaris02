@@ -16,16 +16,19 @@ const Navbar = () => {
                         <Link class="nav-link text-light" aria-current="page" to="/guitar">Guitars</Link>
                         </li>
                         <li class="nav-item">
+                        <Link class="nav-link text-light" to="/bass">Basses</Link>
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link text-light" href="#">Builder</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="#">In Stocks</a>
+                        <Link class="nav-link text-light" to="/in-stock">In Stocks</Link>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Merch</a>
+                        <Link class="nav-link text-light" to="/merch">Merch</Link>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Artists</a>
+                        <Link class="nav-link text-light" to="/artist">Artists</Link>
                         </li>
                     </ul>
                     </div>

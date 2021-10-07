@@ -1,0 +1,18 @@
+.artist-container{
+    background-color: #141414;
+    color: white;
+}
+.artists-title-container{
+    background-image: url(../../Resorce/Img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15% 0;
+}
+.sinature-container{
+    width: 95%;
+    margin: 0 auto;
+}
+.signature-img{
+    width: 100%;
+}
