@@ -17,10 +17,10 @@ const Category = () => {
             </div>
             <div className="row mt-5 mb-5">
                 <div className="col-md-6 img3">
-                    <img src={Image3} className="cetagory-img" alt="" />
+                    <img src={Image4} className="cetagory-img" alt="" />
                 </div>
                 <div className="col-md-6 img4">
-                    <img src={Image4} className="cetagory-img" alt="" />
+                    <img src={Image3} className="cetagory-img" alt="" />
                 </div>
             </div>
         </div>

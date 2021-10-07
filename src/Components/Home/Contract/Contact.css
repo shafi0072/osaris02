@@ -1,10 +1,17 @@
 .contact-container{
+    background-color: rgb(36, 36, 36);
+}
+.contact-item-container{
     width: 90%;
     margin: 0 auto;
+    
 }
 .contact-title{
     color: white;
 }
 .contact-p{
     color: white;
+}
+.contact-input:focus{
+    box-shadow: none;
 }
