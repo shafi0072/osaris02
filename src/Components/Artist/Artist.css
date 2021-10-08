@@ -9,6 +9,22 @@
     background-size: cover;
     padding: 15% 0;
 }
+.img-container{
+    position: relative;
+    z-index: 1;
+}
+.img-icon-container{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transition: all .3s ease-in-out; 
+}
+.artist-icon{
+    font-size: 30px!important;
+    color: rgb(74, 74, 255);
+    cursor: pointer;
+    margin-top: 50px!important;
+}
 .sinature-container{
     width: 95%;
     margin: 0 auto;

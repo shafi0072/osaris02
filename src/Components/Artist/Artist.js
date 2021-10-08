@@ -3,7 +3,10 @@ import Navbar from '../Shared/Navbar/Navbar';
 import Contact from '../Home/Contract/Contract';
 import Footer from '../Home/Footer/Footer';
 import BigSign from '../../Resorce/Img/anna-sentina.jpg';
-import SmallSign from '../../Resorce/Img/aj-bartholomew.jpg'
+import SmallSign from '../../Resorce/Img/aj-bartholomew.jpg';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import './Artist.css';
 const Artist = () => {
     return (
@@ -18,7 +21,17 @@ const Artist = () => {
                 <div className="row sinature-container">
                     <div className="col-md-2">
                         <div>
-                            <img className="signature-img" src={BigSign}/>
+                            <div className="icon-hover">
+                                <img className="signature-img" src={BigSign}/>
+                                <div className="img-container">
+                                    <ul className="d-flex justify-content-center align-item-center p-0 m-0 img-icon-container">
+                                        <li><FacebookIcon className="artist-icon"/></li>
+                                        <li><TwitterIcon className="artist-icon me-2 ms-2"/></li>
+                                        <li><InstagramIcon className="artist-icon"/></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                             <div className="text-center">
                                 <h4>Anna Sentian</h4>
                                 <h5>Solo Artist</h5>

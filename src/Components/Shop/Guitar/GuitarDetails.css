@@ -1,0 +1,47 @@
+.guitar-details-container{
+    background-color: #141414;
+    color: white;
+}
+.guitar-img-container{
+    width: 70%;
+    height: 8vh;
+    margin: 0 auto;
+    border: 2px solid rgb(87, 87, 87);
+    background-color: rgb(29, 29, 29);
+}
+.guitar-img{
+    width: 10%;
+    display: block;
+    margin: 0 auto!important;
+    height: 100%;
+    padding: 2% 0;
+}
+.guitar-main-img{
+    width: 30%;
+    height: 70vh;
+    display: block;
+    margin: 0 auto;
+}
+.video-container{
+    width: 75%;
+    margin: 0 auto;
+    height: 70vh;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    outline: 20px solid gray;
+    border-radius: 5px;
+}
+.details-text-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.gallery-big{
+    width: 100%;
+    height: 60vh;
+}
+.details-container{
+    width: 85%;
+    margin: 0 auto;
+}
