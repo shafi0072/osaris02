@@ -3,7 +3,7 @@ import './Bass.css';
 import BassImg from '../../../Resorce/Img/a6h-main-137637.png';
 const BassCard = () => {
     return (
-        <div>
+        <div className="row">
             <div className="col-md-4">
                 <div className="card-container text-light">
                     <h3>ARIES</h3>

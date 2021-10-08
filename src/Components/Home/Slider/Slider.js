@@ -14,24 +14,24 @@ const Slider = () => {
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src={Slide1} class="d-block w-100 slider-height" alt="..."/>
+                <img src={Slide1} class="d-block w-100 slider-height slider-animation" alt="..."/>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>PLAYED BY THE BEST</h1>
-                    <p className="slider-margin">PREMIUM CUSTOM GUITARS MADE IN AMERICA SINCE 1946</p>
+                    <h1 className="slider-head">PLAYED BY THE BEST</h1>
+                    <p className="slider-margin slider-p">PREMIUM CUSTOM GUITARS MADE IN AMERICA SINCE 1946</p>
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src={Slide2} class="d-block w-100 slider-height" alt="..."/>
+                <img src={Slide2} class="d-block w-100 slider-height slider-animation" alt="..."/>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Second slide label</h1>
-                    <p className="slider-margin">Some representative placeholder content for the second slide.</p>
+                    <h1 className="slider-head">PLAYED BY THE BEST</h1>
+                    <p className="slider-margin slider-p">Some representative placeholder content for the second slide.</p>
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src={Slide3} class="d-block w-100 slider-height" alt="..."/>
+                <img src={Slide3} class="d-block w-100 slider-height slider-animation" alt="..."/>
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Third slide label</h1>
-                    <p className="slider-margin">Some representative placeholder content for the third slide.</p>
+                    <h1 className="slider-head">PLAYED BY THE BEST</h1>
+                    <p className="slider-margin slider-p">Some representative placeholder content for the third slide.</p>
                 </div>
                 </div>
             </div>

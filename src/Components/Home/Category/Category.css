@@ -1,32 +1,95 @@
-.cetagory-img{
+img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.img1{
-    transform: translateY(15px);
+.img1-container{
+    position: relative;
+}
+.img1-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.img-h3{
+    font-size: 35px;
+}
+.img-h1{
+    font-size: 65px;
+}
+.img-p{
+    font-size: 30px;
+}
+.img-link{
+    font-size: 27px;
+    color: rgb(86, 86, 255);
+    text-decoration: none;
     transition: all .3s ease-in-out;
 }
-.img1:hover{
+.img-link:hover{
+    color: rgb(44, 44, 255);
+}
+.img2-container{
+    position: relative;
+}
+.img2-text{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+}
+.img3-container{
+    position: relative;
+}
+.img3-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 80%;
+    color: white;
+}
+.img4-container{
+    position: relative;
+}
+.img4-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+/* Hover effect */
+.img1-hover{
+    transform: translateY(20px);
+    transition: all .4s ease-in-out;
+}
+.img1-hover:hover{
     transform: translateY(0);
 }
-.img2{
-    transform: translateY(35px);
-    transition: all .3s ease-in-out;
+.img2-hover{
+    transform: translateY(40px);
+    transition: all .4s ease-in-out;
 }
-.img2:hover{
-    transform: translateY(15px);
+.img2-hover:hover{
+    transform: translateY(10px);
 }
-.img3{
-    transform: translateY(15px);
-    transition: all .3s ease-in-out;
+.img3-hover{
+    transform: translateY(20px);
+    transition: all .4s ease-in-out;
 }
-.img3:hover{
+.img3-hover:hover{
     transform: translateY(0);
 }
-.img4{
-    transform: translateY(35px);
-    transition: all .3s ease-in-out;
+.img4-hover{
+    transform: translateY(40px);
+    transition: all .4s ease-in-out;
 }
-.img4:hover{
-    transform: translateY(15px);
+.img4-hover:hover{
+    transform: translateY(10px);
 }

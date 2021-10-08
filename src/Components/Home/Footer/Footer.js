@@ -23,7 +23,7 @@ const Footer = () => {
                    <div className="col-md-4 copyright">Copyright © 2021 Kiesel Guitars. All Rights Reserved.</div>
                    <div className="col-md-4">
                        <ul className="d-flex justify-content-center align-item-center">
-                           <li></li>
+                           <li><FacebookIcon/></li>
                            <li></li>
                            <li></li>
                            <li></li>

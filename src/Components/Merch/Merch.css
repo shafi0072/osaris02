@@ -9,3 +9,7 @@
     background-size: cover;
     padding: 17% 0;
 }
+.merch-link{
+    color: rgb(46, 46, 253);
+    cursor: pointer;
+}

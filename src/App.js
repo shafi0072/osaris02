@@ -11,6 +11,7 @@ import Bass from './Components/Shop/Bass/Bass';
 import InStocks from './Components/Shop/InStocks/InStocks';
 import Merch from './Components/Merch/Merch';
 import Artist from './Components/Artist/Artist';
+import Blog from './Components/Blog/Blog';
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
           <Route path = '/in-stock' exact component = {InStocks}/>
           <Route path = '/merch' exact component = {Merch}/>
           <Route path = '/artist' exact component = {Artist}/>
+          <Route path = '/blog' exact component = {Blog}/>
         </Switch>
     </Router>
   );

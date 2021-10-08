@@ -4,7 +4,7 @@ import './Builder.css';
 
 const Builder = () => {
     return (
-        <div>
+        <div className="mt-2">
             <div className="slider-img-containter">
                 <img src={Build} className="builder-img" alt="" />
             </div>

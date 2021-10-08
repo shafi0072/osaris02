@@ -1,9 +1,22 @@
 .guiter-container{
     background-color: #141414;
-    height: 100vh;
+    height: 100%;
 }
 li{
     list-style: none;
+}
+.guiter-text{
+    background-color: rgb(70, 70, 70);
+}
+.filter-container{
+    box-sizing: border-box;
+    padding-left: 4%;
+}
+.filter-title{
+    font-size: 22px;
+}
+.filter-items-container{
+    margin-bottom: 5%;
 }
 .card-container{
     padding: 3%;

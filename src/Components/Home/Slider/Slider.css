@@ -4,3 +4,25 @@
 .slider-margin{
     margin-bottom: 50%;
 }
+.slider-animation{
+    animation: slider 4s infinite;
+}
+@keyframes slider{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.slider-head{
+    font-size: 45px;
+    font-weight: bold;
+}
+.slider-p{
+    font-size: 25px;
+    color: rgb(139, 139, 139);
+}

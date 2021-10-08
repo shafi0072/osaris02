@@ -8,8 +8,8 @@ const Contract = () => {
                 <h4 className="text-center contact-p mb-3">Join our newsletter to receive information on new products, sales and more!</h4>
                 <div>
                     <div class="input-group pb-3">
-                        <input type="text" class="form-control contact-input" placeholder="Email Adress" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                        <span class="input-group-text" id="basic-addon2">Sign up</span>
+                        <input type="text" class="form-control contact-input py-2" placeholder="Email Adress" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                        <span class="input-group-text sign-button" id="basic-addon2">SIGN UP</span>
                     </div>
                 </div>
             </div>

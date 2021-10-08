@@ -1,20 +1,22 @@
 import React from 'react';
 import BassCard from './BassCard';
 import Navbar from '../../Shared/Navbar/Navbar';
+import Contact from '../../Home/Contract/Contract';
+import Footer from '../../Home/Footer/Footer';
 import './Bass.css';
 const Bass = () => {
     return (
         <div className="bass-container">
             <Navbar/>
-            <div>
+            <div className="text-center text-light py-2 guiter-text mb-4">
                 <h1>BASSES</h1>
             </div>
             <div className="row">
-                <div className="col-md-3 text-light">
+                <div className="col-md-3 text-light filter-container">
                     <h3>FILTER BY</h3>
                     <div className="filter-item-container">
                         <ul>
-                            <li>String Count
+                            <li className="filter-items-container"><span className="filter-title">String Count</span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -34,7 +36,7 @@ const Bass = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li>Model Type
+                            <li className="filter-items-container"><span className="filter-title">Model Type</span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -50,7 +52,7 @@ const Bass = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li>Headstock Construction
+                            <li className="filter-items-container"><span className="filter-title">Headstock Construction</span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -62,7 +64,7 @@ const Bass = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li>Neck Construction
+                            <li className="filter-items-container"><span className="filter-title">Neck Construction</span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -78,7 +80,7 @@ const Bass = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li>Price
+                            <li className="filter-items-container"><span className="filter-title">Price</span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -102,11 +104,13 @@ const Bass = () => {
                     </div>
                 </div>
                 <div className="col-md-9">
-                    <div className="row">
+                    
                         <BassCard/>
-                    </div>
+                    
                 </div>
             </div>
+            <Contact/>
+            <Footer/>
         </div>
     );
 };
