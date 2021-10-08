@@ -6,10 +6,10 @@ import './Blog.css';
 
 const Blog = () => {
     return (
-        <div>
+        <div className="blog-container">
             <Navbar/>
             <div>
-                Hello
+                <h1>Comming soon</h1>
             </div>
             <Contact/>
             <Footer/>

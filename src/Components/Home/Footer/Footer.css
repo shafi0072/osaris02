@@ -29,3 +29,10 @@
     width: 90%;
     margin: 0 auto;
 }
+.footer-icon{
+    color: white;
+    font-size: 30px!important;
+}
+.footer-icon:hover{
+    font-size: 32px!important;
+}

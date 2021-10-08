@@ -35,7 +35,7 @@ const Navbar = () => {
                         <Link class="nav-link text-light navbar-item py-3" to="/blog">BLOG</Link>
                         </li>
                         <li class="nav-item me-3">
-                        <Link class="nav-link text-light py-3 navbar-icon" to="/blog"><ShoppingCartIcon className=""/></Link>
+                        <Link class="nav-link text-light py-3" to="/blog"><ShoppingCartIcon className="navbar-icon"/></Link>
                         </li>
                     </ul>
                     </div>

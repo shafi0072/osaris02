@@ -23,5 +23,9 @@
     color: green;
 }
 .navbar-icon{
-    color: black;
+    color: white;
+    font-size: 20px;
+}
+.navbar-icon:hover{
+    color: rgb(177, 177, 177);
 }
