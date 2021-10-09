@@ -29,29 +29,29 @@ const GuitarDetails = () => {
                     </div>
                     <div className="col-md-3">
                         <div>
-                            <div>
-                                <h1>ARIES</h1>
-                                <h3>BOLT-ON</h3>
-                                <p>Available in 6, 7 and 8 strings</p>
-                                <p>Starting At</p>
-                                <h2>$1,299</h2>
+                            <div className="buy-container-details">
+                                <h1 className="buy-h1">ARIES</h1>
+                                <h3 className="buy-h3">BOLT-ON</h3>
+                                <p className="buy-p">Available in 6, 7 and 8 strings</p>
+                                <p className="buy-p">Starting At</p>
+                                <h2 className="buy-h2">$1,299</h2>
                             </div>
                             <div>
-                                <p>Or a deposit of: <span>$260</span> with <span>Partial.ly</span></p>
-                                <a>Learn More</a>
+                                <p className="buy-p">Or a deposit of: <span className="buy-amount">$260</span> with <span>Partial.ly</span></p>
+                                <a className="buy-link">Learn More</a>
                                 <p>Deposit price based on model's starting price</p>
-                                <button>Buy Now</button>
-                                <button>Add TO Cart</button>
+                                <button className="buy-button">Buy Now</button>
+                                <button className="buy-button">Add To Cart</button>
                                 <p>Share: <span>icon</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="details-text-container">
-                    <p>The ARIES marked a major turning point for Kiesel; though classic designs were still available, they were no longer the exclusive builds. With its prominent bevel and effortless fret access in a bolt-on configuration, the</p>
+                    <p className="details-p">The ARIES marked a major turning point for Kiesel; though classic designs were still available, they were no longer the exclusive builds. With its prominent bevel and effortless fret access in a bolt-on configuration, the</p>
                 </div>
                 <div>
-                    <h2>Gallery</h2>
+                    <h2 className="details-title">Gallery</h2>
                     <div className="row">
                         <div className="col-md-6 p-0"><img className="gallery-big" src={GuitarGallery}/></div>
                         <div className="col-md-6 p-0"><img className="gallery-big" src={GuitarGallery}/></div>
@@ -71,13 +71,15 @@ const GuitarDetails = () => {
                         </div>
                     </div>
                 </div>
+                <h2 className="details-title mt-3">GUITARS VIDEO</h2>
                 <div className="video-container py-5">
+                    
                     <iframe className="video" src = "https://www.youtube.com/embed/M4lsB-B1O7U">
                     </iframe>
                 </div>
-                <div className="details-container py-5">
-                    <h2>Standard Specs</h2>
-                    <div className="row">
+                <h2 className="details-title">Standard Specs</h2>
+                <div className="details-container py-2">
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>
@@ -85,7 +87,7 @@ const GuitarDetails = () => {
                             <p>Alder</p>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>
@@ -93,7 +95,7 @@ const GuitarDetails = () => {
                             <p>Alder</p>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>
@@ -101,24 +103,7 @@ const GuitarDetails = () => {
                             <p>Alder</p>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-3">
-                            <h4>BODY</h4>
-                        </div>
-                        <div className="col-md-9">
-                            <p>Alder</p>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-md-3">
-                            <h4>BODY</h4>
-                        </div>
-                        <div className="col-md-9">
-                            <p>Alder</p>
-                        </div>
-                    </div>
-                    <div className="row">
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>
@@ -127,7 +112,7 @@ const GuitarDetails = () => {
                         </div>
                     </div>
 
-                    <div className="row">
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>
@@ -135,7 +120,7 @@ const GuitarDetails = () => {
                             <p>Alder</p>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>
@@ -143,7 +128,24 @@ const GuitarDetails = () => {
                             <p>Alder</p>
                         </div>
                     </div>
-                    <div className="row">
+
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>BODY</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>BODY</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
                         <div className="col-md-3">
                             <h4>BODY</h4>
                         </div>

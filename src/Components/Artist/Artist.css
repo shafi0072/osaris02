@@ -9,21 +9,35 @@
     background-size: cover;
     padding: 15% 0;
 }
-.img-container{
+.icon-hover{
     position: relative;
-    z-index: 1;
 }
-.img-icon-container{
+.icon-container{
     position: absolute;
-    bottom: 0;
-    left: 25%;
-    transition: all .3s ease-in-out; 
+    width: 20%;
+    height: 20%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all .4s ease-in-out;
 }
-.artist-icon{
+.icon-items{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+.icon-item{
     font-size: 30px!important;
-    color: rgb(74, 74, 255);
-    cursor: pointer;
-    margin-top: 50px!important;
+    cursor:pointer;
+}
+.icon-hover:hover .icon-container{
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    visibility: visible;
 }
 .sinature-container{
     width: 95%;

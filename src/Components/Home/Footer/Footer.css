@@ -32,7 +32,9 @@
 .footer-icon{
     color: white;
     font-size: 30px!important;
+    transition: all .3s ease-in-out;
 }
 .footer-icon:hover{
-    font-size: 32px!important;
+    color: rgb(81, 113, 255);
+    font-size: 35px!important;
 }

@@ -23,15 +23,14 @@ const Artist = () => {
                         <div>
                             <div className="icon-hover">
                                 <img className="signature-img" src={BigSign}/>
-                                <div className="img-container">
-                                    <ul className="d-flex justify-content-center align-item-center p-0 m-0 img-icon-container">
-                                        <li><FacebookIcon className="artist-icon"/></li>
-                                        <li><TwitterIcon className="artist-icon me-2 ms-2"/></li>
-                                        <li><InstagramIcon className="artist-icon"/></li>
+                                <div className="icon-container">
+                                    <ul className="d-flex justify-content-center align-items-center icon-items">
+                                        <li><FacebookIcon className="icon-item"/></li>
+                                        <li><TwitterIcon className="icon-item me-1 ms-1"/></li>
+                                        <li><InstagramIcon className="icon-item"/></li>
                                     </ul>
                                 </div>
                             </div>
-                            
                             <div className="text-center">
                                 <h4>Anna Sentian</h4>
                                 <h5>Solo Artist</h5>
