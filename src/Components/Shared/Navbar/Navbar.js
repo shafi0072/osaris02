@@ -20,7 +20,7 @@ const Navbar = () => {
                         <Link class="nav-link text-light navbar-item py-3" to="/bass">BASSES</Link>
                         </li>
                         <li class="nav-item me-3">
-                        <a class="nav-link text-light navbar-item py-3" href="#">BUILDER</a>
+                        <Link class="nav-link text-light navbar-item py-3" to="/builder">BUILDER</Link>
                         </li>
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/in-stock">IN STOCKS</Link>

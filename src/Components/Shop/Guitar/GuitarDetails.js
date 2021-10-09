@@ -89,7 +89,15 @@ const GuitarDetails = () => {
                     </div>
                     <div className="row imfomation-line">
                         <div className="col-md-3">
-                            <h4>BODY</h4>
+                            <h4>Bridge</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Construction</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Dimensions</h4>
                         </div>
                         <div className="col-md-9">
                             <p>Alder</p>
@@ -97,32 +105,7 @@ const GuitarDetails = () => {
                     </div>
                     <div className="row imfomation-line">
                         <div className="col-md-3">
-                            <h4>BODY</h4>
-                        </div>
-                        <div className="col-md-9">
-                            <p>Alder</p>
-                        </div>
-                    </div>
-                    <div className="row imfomation-line">
-                        <div className="col-md-3">
-                            <h4>BODY</h4>
-                        </div>
-                        <div className="col-md-9">
-                            <p>Alder</p>
-                        </div>
-                    </div>
-
-                    <div className="row imfomation-line">
-                        <div className="col-md-3">
-                            <h4>BODY</h4>
-                        </div>
-                        <div className="col-md-9">
-                            <p>Alder</p>
-                        </div>
-                    </div>
-                    <div className="row imfomation-line">
-                        <div className="col-md-3">
-                            <h4>BODY</h4>
+                            <h4>Electronics</h4>
                         </div>
                         <div className="col-md-9">
                             <p>Alder</p>
@@ -131,7 +114,7 @@ const GuitarDetails = () => {
 
                     <div className="row imfomation-line">
                         <div className="col-md-3">
-                            <h4>BODY</h4>
+                            <h4>Fingerboard</h4>
                         </div>
                         <div className="col-md-9">
                             <p>Alder</p>
@@ -139,7 +122,16 @@ const GuitarDetails = () => {
                     </div>
                     <div className="row imfomation-line">
                         <div className="col-md-3">
-                            <h4>BODY</h4>
+                            <h4>Frets</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Hardware</h4>
                         </div>
                         <div className="col-md-9">
                             <p>Alder</p>
@@ -147,7 +139,71 @@ const GuitarDetails = () => {
                     </div>
                     <div className="row imfomation-line">
                         <div className="col-md-3">
-                            <h4>BODY</h4>
+                            <h4>Inlays</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Neck</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Neck Width</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Notes</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Pickups</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Scale Length</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Strings</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Tuners</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <p>Alder</p>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Weight</h4>
                         </div>
                         <div className="col-md-9">
                             <p>Alder</p>

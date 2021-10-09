@@ -36,8 +36,8 @@ li{
     transition: all .5s ease-in-out;
 }
 .card-container:hover .card-img{
-    width: 30%;
-    height: 30vh;
+    width: 33%;
+    height: 36vh;
 }
 .price-text{
     font-size: 20px;

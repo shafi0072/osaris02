@@ -16,9 +16,7 @@ const GuitarCard = () => {
                     </div>
                     <div className="hover-items">
                         <p className="mt-1">Available Now</p>
-                        <button className="hover-button">SHOW DETAILS</button>
                     </div>
-                    
                 </div>
             </div>
         </div>

@@ -1,0 +1,22 @@
+.clientBuilder-container{
+    background-color: #141414;
+    color: white;
+}
+.details-title{
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgb(58, 58, 58);
+    padding: 1.5% 0 1.5% 3%;
+    
+}
+.details-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.imfomation-line{
+    border-bottom: 2px solid rgb(48, 48, 48);
+    padding-top: 1%;
+}
+.builder-input{
+    width: 100%;
+}
