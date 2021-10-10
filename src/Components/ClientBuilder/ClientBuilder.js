@@ -142,6 +142,9 @@ const ClientBuilder = () => {
                         </div>
                     </div>
                 </form>
+                <div className="text-center py-3">
+                    <button type="button" class="btn btn-primary">Success</button>
+                </div>
             </div>
             <Contract/>
             <Footer/>

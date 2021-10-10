@@ -3,7 +3,8 @@ import Image1 from '../../../Resorce/Img/Img1.jpg';
 import Image2 from '../../../Resorce/Img/Img2.jpg';
 import Image3 from '../../../Resorce/Img/Img3.jpg';
 import Image4 from '../../../Resorce/Img/Img4.jpg';
-import './Category.css'
+import './Category.css';
+import '../Responsive.css';
 const Category = () => {
     return (
         <div className="py-5 mb-4">

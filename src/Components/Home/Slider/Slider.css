@@ -19,10 +19,14 @@
     }
 }
 .slider-head{
+    top: 5%;
     font-size: 45px;
     font-weight: bold;
 }
 .slider-p{
     font-size: 25px;
     color: rgb(139, 139, 139);
+}
+.slider-text-container{
+    bottom: -2.75rem;
 }

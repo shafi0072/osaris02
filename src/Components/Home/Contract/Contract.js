@@ -1,5 +1,6 @@
 import React from 'react';
-import './Contact.css'
+import './Contact.css';
+import '../Responsive.css';
 const Contract = () => {
     return (
         <div className="contact-container pt-3">

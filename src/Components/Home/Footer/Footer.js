@@ -19,9 +19,9 @@ const Footer = () => {
            
            <div className="footer-copyright-container">
                <div class="row mt-3">
-                   <div className="col-md-4 logo">LOGO</div>
-                   <div className="col-md-4 copyright">Copyright © 2021 Kiesel Guitars. All Rights Reserved.</div>
-                   <div className="col-md-4">
+                   <div className="col-md-2 logo">LOGO</div>
+                   <div className="col-md-8 copyright text-center my-2">Copyright © 2021 Guitar Bangladesh. All Rights Reserved.</div>
+                   <div className="col-md-2">
                        <ul className="d-flex justify-content-center align-item-center">
                            <li><FacebookIcon className="footer-icon me-3"/></li>
                            <li><TwitterIcon className="footer-icon me-3"/></li>

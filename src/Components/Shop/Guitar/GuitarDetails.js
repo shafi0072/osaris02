@@ -40,8 +40,8 @@ const GuitarDetails = () => {
                                 <p className="buy-p">Or a deposit of: <span className="buy-amount">$260</span> with <span>Partial.ly</span></p>
                                 <a className="buy-link">Learn More</a>
                                 <p>Deposit price based on model's starting price</p>
-                                <button className="buy-button">Buy Now</button>
-                                <button className="buy-button">Add To Cart</button>
+                                <button type="button" class="btn btn-primary buy-button">Success</button> 
+                                <button type="button" class="btn btn-primary buy-button">Success</button>
                                 <p>Share: <span>icon</span></p>
                             </div>
                         </div>

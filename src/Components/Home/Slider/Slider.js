@@ -3,33 +3,34 @@ import Slide1 from '../../../Resorce/Img/Slide1.jpeg';
 import Slide2 from '../../../Resorce/Img/Slide2.jpg';
 import Slide3 from '../../../Resorce/Img/Slide3.jpg';
 import './Slider.css';
+import '../Responsive.css';
 const Slider = () => {
     return (
         <div>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src={Slide1} class="d-block w-100 slider-height slider-animation" alt="..."/>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block slider-text-container">
                     <h1 className="slider-head">PLAYED BY THE BEST</h1>
                     <p className="slider-margin slider-p">PREMIUM CUSTOM GUITARS MADE IN AMERICA SINCE 1946</p>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img src={Slide2} class="d-block w-100 slider-height slider-animation" alt="..."/>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block slider-text-container">
                     <h1 className="slider-head">PLAYED BY THE BEST</h1>
                     <p className="slider-margin slider-p">Some representative placeholder content for the second slide.</p>
                 </div>
                 </div>
                 <div class="carousel-item">
                 <img src={Slide3} class="d-block w-100 slider-height slider-animation" alt="..."/>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block slider-text-container">
                     <h1 className="slider-head">PLAYED BY THE BEST</h1>
                     <p className="slider-margin slider-p">Some representative placeholder content for the third slide.</p>
                 </div>

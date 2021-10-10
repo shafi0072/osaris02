@@ -1,6 +1,7 @@
 import React from 'react';
 import Build from '../../../Resorce/Img/matrix.jpg';
 import './Builder.css';
+import '../Responsive.css';
 
 const Builder = () => {
     return (
