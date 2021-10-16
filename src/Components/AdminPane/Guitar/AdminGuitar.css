@@ -1,0 +1,21 @@
+.input-item-name{
+    width: 19%;
+    font-weight: bold;
+}
+.colon{
+    padding-right: 1%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.input-box{
+    width: 55%;
+    padding: .3% .6%;
+    border-radius: 5px;
+}
+.admin-button-container{
+    width: 20%;
+    margin: 0 auto;
+}
+.admin-submit{
+    width: 100%!important;
+}

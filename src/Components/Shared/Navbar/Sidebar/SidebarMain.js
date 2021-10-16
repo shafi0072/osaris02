@@ -2,15 +2,15 @@ import React from 'react';
 import './Sidebar.css'
 const SidebarMain = () => {
     return (
-        <body>
-    <input type="checkbox" id="check"/>
-    <label for="check">
+        <body className="bg-dark">
+    <input className="stactic" type="checkbox" id="check"/>
+    <label className="stactic" for="check">
       <i class="fas fa-bars" id="btn"></i>
       <i class="fas fa-times" id="cancel"></i>
     </label>
     <div class="sidebar">
       <header>Guitar Bangladesh</header>
-      <a href="#" class="active">
+      <a href="#" class="aawar">
         <i class="fas fa-qrcode"></i>
         <span>Dashboard</span>
       </a>

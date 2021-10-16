@@ -1,6 +1,7 @@
 import React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Navbar.css';
+import '../../MainResponsive.css';
 import {Link} from 'react-router-dom';
 const Navbar = () => {
     return (
@@ -8,9 +9,13 @@ const Navbar = () => {
             <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0">
                 <div class="container-fluid nav-container">
                     <Link class="navbar-brand text-light" to="./">GUITAR BANGLADESH</Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    </nav>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-3">

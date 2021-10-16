@@ -3,7 +3,9 @@ import GuitarCard from './GuitarCard';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Contact from '../../Home/Contract/Contract';
 import Footer from '../../Home/Footer/Footer';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './Guitar.css';
+
 
 const Guitar = () => {
     return (
@@ -13,11 +15,13 @@ const Guitar = () => {
                 <h1>GUITARS</h1>
             </div>
             <div className="row">
-                <div className="col-md-3 text-light filter-container">
+                <div className="col-md-4 text-light filter-container">
                     <h3>FILTER BY</h3>
                     <div className="filter-item-container">
                         <ul>
-                            <li className="filter-items-container"><span className="filter-title">String Count</span>
+                            <li className="filter-items-container">
+                                <span className="filter-title">String Count</span>
+                                <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -37,7 +41,9 @@ const Guitar = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="filter-items-container"><span className="filter-title">Model Type</span>
+                            <li className="filter-items-container">
+                                <span className="filter-title">Model Type</span>
+                                <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -53,7 +59,9 @@ const Guitar = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="filter-items-container"><span className="filter-title">Headstock Construction</span>
+                            <li className="filter-items-container">
+                                <span className="filter-title">Headstock Construction</span>
+                                <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -65,7 +73,9 @@ const Guitar = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="filter-items-container"><span className="filter-title">Neck Construction</span>
+                            <li className="filter-items-container">
+                                <span className="filter-title">Neck Construction</span>
+                                <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
                                     <li>
                                         <input type="checkbox"/>
@@ -81,7 +91,9 @@ const Guitar = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="filter-items-container"><span className="filter-title">Price</span>
+                            <li className="filter-items-container">
+                                <span className="filter-title">Price</span>
+                                <span><KeyboardArrowDownIcon className="arrow"/></span>
                             
                                 <ul>
                                     <li>
@@ -105,7 +117,7 @@ const Guitar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-md-9 p-0">
+                <div className="col-md-8 p-0">
                     
                         <GuitarCard/>
                     

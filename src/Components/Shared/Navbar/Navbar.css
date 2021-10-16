@@ -16,6 +16,8 @@
     border-bottom: 3px solid white;
     transition: all .5s ease-in-out;
 }
+.navbar-toggler-icon{
+}
 .navbar-item:hover.navbar-item::before{
     left: 0;
 }

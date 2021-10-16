@@ -12,6 +12,9 @@ li{
     box-sizing: border-box;
     padding-left: 4%;
 }
+.arrow{
+    font-size: 32px!important;
+}
 .filter-title{
     font-size: 22px;
 }

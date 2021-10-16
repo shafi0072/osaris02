@@ -14,7 +14,9 @@
 /* #### Max Width 1199px ----- View 1000px  ####### */
 
 @media(max-width:1199px){
-
+ .navbar-item{
+     font-size: 15px;
+ }
 }
 
 /* #### Max Width 999px ----- View 850px  ####### */

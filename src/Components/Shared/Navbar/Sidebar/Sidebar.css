@@ -113,3 +113,6 @@ label #cancel{
     visibility: visible;
   }
 }
+.stactic{
+  position: fixed;
+}
