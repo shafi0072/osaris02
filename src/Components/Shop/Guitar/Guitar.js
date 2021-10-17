@@ -14,12 +14,12 @@ const Guitar = () => {
             <div className="text-center text-light py-2 guiter-text mb-4">
                 <h1>GUITARS</h1>
             </div>
-            <div className="row">
+            <div className="row pb-5">
                 <div className="col-md-4 text-light filter-container">
                     <h3>FILTER BY</h3>
                     <div className="filter-item-container">
                         <ul>
-                            <li className="filter-items-container">
+                            {/* <li className="filter-items-container">
                                 <span className="filter-title">String Count</span>
                                 <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
@@ -40,7 +40,7 @@ const Guitar = () => {
                                         <span> 12 (1)</span>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li className="filter-items-container">
                                 <span className="filter-title">Model Type</span>
                                 <span><KeyboardArrowDownIcon className="arrow"/></span>
@@ -59,7 +59,7 @@ const Guitar = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="filter-items-container">
+                            {/* <li className="filter-items-container">
                                 <span className="filter-title">Headstock Construction</span>
                                 <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
@@ -72,8 +72,8 @@ const Guitar = () => {
                                         <span> Headless (12)</span>
                                     </li>
                                 </ul>
-                            </li>
-                            <li className="filter-items-container">
+                            </li> */}
+                            {/* <li className="filter-items-container">
                                 <span className="filter-title">Neck Construction</span>
                                 <span><KeyboardArrowDownIcon className="arrow"/></span>
                                 <ul>
@@ -90,7 +90,7 @@ const Guitar = () => {
                                         <span> Set-Neck / Set-Thru (12)</span>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
                             <li className="filter-items-container">
                                 <span className="filter-title">Price</span>
                                 <span><KeyboardArrowDownIcon className="arrow"/></span>

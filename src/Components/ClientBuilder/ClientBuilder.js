@@ -16,7 +16,12 @@ const ClientBuilder = () => {
                             <h4>BODY</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Body"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -24,7 +29,12 @@ const ClientBuilder = () => {
                             <h4>Bridge</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Bridge"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -32,7 +42,12 @@ const ClientBuilder = () => {
                             <h4>Dimensions</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Dimensions"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -40,7 +55,12 @@ const ClientBuilder = () => {
                             <h4>Electronics</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Electronics"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
 
@@ -49,7 +69,12 @@ const ClientBuilder = () => {
                             <h4>Fingerboard</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Fingerboard"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -57,7 +82,12 @@ const ClientBuilder = () => {
                             <h4>Frets</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Frets"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
 
@@ -66,7 +96,12 @@ const ClientBuilder = () => {
                             <h4>Hardware</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Hardware"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -74,7 +109,12 @@ const ClientBuilder = () => {
                             <h4>Inlays</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Inlays"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -82,7 +122,12 @@ const ClientBuilder = () => {
                             <h4>Neck</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Neck"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -90,7 +135,12 @@ const ClientBuilder = () => {
                             <h4>Neck Width</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Neck Width"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -98,7 +148,12 @@ const ClientBuilder = () => {
                             <h4>Notes</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Notes"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -106,7 +161,12 @@ const ClientBuilder = () => {
                             <h4>Pickups</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Pickups"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -114,7 +174,12 @@ const ClientBuilder = () => {
                             <h4>Scale Length</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Scale Length"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -122,7 +187,12 @@ const ClientBuilder = () => {
                             <h4>Strings</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Strings"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -130,7 +200,12 @@ const ClientBuilder = () => {
                             <h4>Tuners</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Tuners"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                     <div className="row imfomation-line">
@@ -138,7 +213,12 @@ const ClientBuilder = () => {
                             <h4>Weight</h4>
                         </div>
                         <div className="col-md-9">
-                            <input type="text" className="builder-input" placeholder="Weight"/>
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                     </div>
                 </form>

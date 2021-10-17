@@ -21,7 +21,7 @@ const App = () => {
         <Switch>
           <Route path = '/' exact component={HomeMain}/>
           <Route path = '/guitar' exact component={Guitar}/>
-          <Route path = '/bass' exact component={Bass}/>
+          {/* <Route path = '/bass' exact component={Bass}/> */}
           <Route path = '/builder' exact component={Builder}/>
           <Route path = '/in-stock' exact component = {InStocks}/>
           <Route path = '/merch' exact component = {Merch}/>

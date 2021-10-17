@@ -17,9 +17,9 @@ const Artist = () => {
                     <h1>ARTISTS</h1>
                     <p>THE KIESEL GUITARS ARTIST FAMILY</p>
                 </div>
-                <h2>Signature Artists</h2>
+                <h2 className="py-3 ms-4">Signature Artists</h2>
                 <div className="row sinature-container">
-                    <div className="col-md-2">
+                    <div className="col-md-4">
                         <div>
                             <div className="icon-hover">
                                 <img className="signature-img" src={BigSign}/>
@@ -38,10 +38,8 @@ const Artist = () => {
                         </div>
                     </div>
                 </div>
-                <h2>Endorsers</h2>
+                <h2 className="py-3 ms-4">Endorsers</h2>
                 <div className="row sinature-container">
-                    <div className="col-md-6">
-                        <div className="row">
                             <div className="col-md-3">
                                 <div>
                                     <img className="signature-img" src={SmallSign}/>
@@ -51,9 +49,7 @@ const Artist = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                        </div>
-                    </div>
+                           
                     <div className="col-md-6">
 
                     </div>

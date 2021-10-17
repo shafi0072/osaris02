@@ -21,9 +21,9 @@ const Navbar = () => {
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" aria-current="page" to="/guitar">GUITARS</Link>
                         </li>
-                        <li class="nav-item me-3">
+                        {/* <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/bass">BASSES</Link>
-                        </li>
+                        </li> */}
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/builder">BUILDER</Link>
                         </li>
