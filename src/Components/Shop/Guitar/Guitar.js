@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import GuitarCard from './GuitarCard';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Contact from '../../Home/Contract/Contract';
@@ -8,6 +8,14 @@ import './Guitar.css';
 
 
 const Guitar = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('https://osaris-backend.herokuapp.com/guitar/')
+    .then(res => res.json())
+    .then(data => setData(data))
+    .catch(err => console.log(err))
+    },[])
     return (
         <div className="guiter-container">
             <Navbar/>
@@ -117,10 +125,12 @@ const Guitar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-md-8 p-0">
+                <div className="col-md-8 p-0 row">
                     
-                        <GuitarCard/>
-                    
+                        
+                    {
+                        data.map(data =>  <GuitarCard data={data}/>)
+                    }
                 </div>
             </div>
             <Contact/>
