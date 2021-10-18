@@ -19,22 +19,29 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item me-3">
-                        <Link class="nav-link text-light navbar-item py-3" aria-current="page" to="/guitar">GUITARS</Link>
+                        <Link class="nav-link text-light navbar-item py-3" aria-current="page" to="/guitar">OSIRIS</Link>
                         </li>
-                        {/* <li class="nav-item me-3">
-                        <Link class="nav-link text-light navbar-item py-3" to="/bass">BASSES</Link>
-                        </li> */}
+                        
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/builder">BUILDER</Link>
                         </li>
                         <li class="nav-item me-3">
+                        <Link class="nav-link text-light navbar-item py-3" to="/bass">SHOP</Link>
+                        </li>
+                        {/* <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/in-stock">IN STOCKS</Link>
+                        </li> */}
+                        <li class="nav-item me-3">
+                        <Link class="nav-link text-light navbar-item py-3" to="/gears">USED GEARS</Link>
                         </li>
                         <li class="nav-item me-3">
-                        <Link class="nav-link text-light navbar-item py-3" to="/merch">MERCH</Link>
+                        <Link class="nav-link text-light navbar-item py-3" to="/merch">G.CARE</Link>
                         </li>
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/artist">ARTISTS</Link>
+                        </li>
+                        <li class="nav-item me-3">
+                        <Link class="nav-link text-light navbar-item py-3" to="/blog">LEARN</Link>
                         </li>
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/blog">BLOG</Link>

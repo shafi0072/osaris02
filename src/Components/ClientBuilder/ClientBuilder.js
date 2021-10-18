@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import Contract from '../Home/Contract/Contract';
 import Footer from '../Home/Footer/Footer';
+import Img from '../../Resorce/Img/Img1.jpg';
 import './ClientBuilder.css';
 
 const ClientBuilder = () => {
@@ -9,6 +10,10 @@ const ClientBuilder = () => {
         <div className="clientBuilder-container">
             <Navbar/>
             <div>
+                <div>
+                    <h1>BUILDER DETAILS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus tellus lorem, a auctor dui rutrum eget. Nulla facilisi. Vivamus consequat neque at nisl facilisis convallis. Sed ut imperdiet massa. Aenean a aliquam justo. Vivamus blandit ipsum non risus dignissim iaculis. Donec posuere vehicula nunc vel lacinia</p>
+                </div>
                <h2 className="details-title">Standard Specs</h2>
                 <form className="details-container py-2">
                     <div className="row imfomation-line">
@@ -224,6 +229,9 @@ const ClientBuilder = () => {
                 </form>
                 <div className="text-center py-3">
                     <button type="button" class="btn btn-primary">Success</button>
+                </div>
+                <div>
+                    <img src={Img}/>
                 </div>
             </div>
             <Contract/>

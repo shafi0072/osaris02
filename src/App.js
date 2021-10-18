@@ -15,16 +15,17 @@ import Artist from './Components/Artist/Artist';
 import Blog from './Components/Blog/Blog';
 import GuitarDetails from './Components/Shop/Guitar/GuitarDetails';
 import AdminMain from './Components/AdminPane/AdminMain';
+import Gears from './Components/UsedGears/Gears';
 const App = () => {
   return (
     <Router>
         <Switch>
           <Route path = '/' exact component={HomeMain}/>
           <Route path = '/guitar' exact component={Guitar}/>
-          {/* <Route path = '/bass' exact component={Bass}/> */}
+          <Route path = '/bass' exact component={Bass}/>
           <Route path = '/builder' exact component={Builder}/>
           <Route path = '/in-stock' exact component = {InStocks}/>
-          <Route path = '/merch' exact component = {Merch}/>
+          <Route path = '/gears' exact component = {Gears}/>
           <Route path = '/artist' exact component = {Artist}/>
           <Route path = '/blog' exact component = {Blog}/>
           <Route path = '/guitar-details' exact component = {GuitarDetails}/>
