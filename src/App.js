@@ -16,6 +16,8 @@ import Blog from './Components/Blog/Blog';
 import GuitarDetails from './Components/Shop/Guitar/GuitarDetails';
 import AdminMain from './Components/AdminPane/AdminMain';
 import Gears from './Components/UsedGears/Gears';
+import Care from './Components/G-Care/Care';
+import Learn from './Components/Learn/Learn';
 const App = () => {
   return (
     <Router>
@@ -26,7 +28,9 @@ const App = () => {
           <Route path = '/builder' exact component={Builder}/>
           <Route path = '/in-stock' exact component = {InStocks}/>
           <Route path = '/gears' exact component = {Gears}/>
+          <Route path = '/care' exact component = {Care}/>
           <Route path = '/artist' exact component = {Artist}/>
+          <Route path = '/learn' exact component = {Learn}/>
           <Route path = '/blog' exact component = {Blog}/>
           <Route path = '/guitar-details' exact component = {GuitarDetails}/>
           <Route path = '/adminPanel' component={AdminMain}/>

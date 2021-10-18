@@ -35,13 +35,13 @@ const Navbar = () => {
                         <Link class="nav-link text-light navbar-item py-3" to="/gears">USED GEARS</Link>
                         </li>
                         <li class="nav-item me-3">
-                        <Link class="nav-link text-light navbar-item py-3" to="/merch">G.CARE</Link>
+                        <Link class="nav-link text-light navbar-item py-3" to="/care">G.CARE</Link>
                         </li>
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/artist">ARTISTS</Link>
                         </li>
                         <li class="nav-item me-3">
-                        <Link class="nav-link text-light navbar-item py-3" to="/blog">LEARN</Link>
+                        <Link class="nav-link text-light navbar-item py-3" to="/learn">LEARN</Link>
                         </li>
                         <li class="nav-item me-3">
                         <Link class="nav-link text-light navbar-item py-3" to="/blog">BLOG</Link>
