@@ -1,0 +1,50 @@
+.gears-full-container{
+    background-color: #141414;
+}
+.gears-img{
+    height: 80vh;
+}
+.gears-container{
+    position: relative;
+}
+.gears-items-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.gears-h2{
+    font-size: 45px;
+    display: block;
+    text-align: center;
+}
+.gears-p{
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-left: .5%;
+}
+.gears-p-width{
+    width: 6%;
+    text-align: left;
+}
+.gears-sell-button{
+    width: 10%;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.gears-sell-button:hover{
+    background-color: blue;
+    letter-spacing: .6px;
+}
+.gears-click-button{
+    color: #0167ff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid #0d6efd;
+}
+.gears-click-button:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}

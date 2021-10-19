@@ -124,12 +124,12 @@ const Guitar = () => {
                             </li>
                         </ul>
                         <div className="d-flex">
-                            <input type="checkbox"/>
-                            <h6>FEATURE OF THE MONTH</h6>
+                            <input className="checkbox" type="checkbox"/>
+                            <h6 className="stocks">FEATURE OF THE MONTH</h6>
                         </div>
                         <div className="d-flex">
-                            <input type="checkbox"/>
-                            <h6>IN STOCK</h6>
+                            <input className="checkbox" type="checkbox"/>
+                            <h6 className="stocks">IN STOCK</h6>
                         </div>
                     </div>
                 </div>

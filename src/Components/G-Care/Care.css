@@ -1,0 +1,65 @@
+.care-container{
+    background-color: #141414;
+    box-sizing: border-box;
+}
+.care-about{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.care-video{
+    width: 100%;
+    height: 600px;
+}
+.care-service-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.service-item{
+    padding: 5%;
+    color: black;
+    box-shadow: 2px 4px 16px 0px rgb(131, 131, 131);
+    text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+.service-item::before{
+    position: absolute;
+    content: '';
+    top: -70%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: tomato;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+}
+.service-item:hover.service-item::before{
+    top: -52%;
+}
+.service-icon{
+    font-size: 40px!important;
+    color: white;
+}
+.service-h4{
+    color: black;
+    font-size: 27px;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+.service-item:hover .service-h4{
+    color: white;
+}
+.gears-sell-button{
+    width: 10%;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.gears-sell-button:hover{
+    background-color: blue;
+    letter-spacing: .6px;
+}
