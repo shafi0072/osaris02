@@ -1,0 +1,64 @@
+.learn-container{
+    background-color: #141414;
+}
+.learn-items-container{
+    background-color: white;
+    box-shadow: 3px 3px 12px 1px #afafaf;
+    position: relative;
+    width: 25vh;
+    height: 25vh;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+.learn-items-container:hover{
+    box-shadow: 3px 3px 12px 1px rgb(255, 166, 150);
+}
+.learn-items-container::after{
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -30%;
+    height: 100%;
+    width: 100%;
+    background-color: tomato;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.learn-items-container:hover.learn-items-container::after{
+    top: 0;
+    right: 0;
+    border-radius: 0;
+}
+.learn-h3{
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.learn-items-container:hover .learn-h3{
+    color: white;
+}
+.learn-p{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.learn-p::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background-color: rgb(67, 67, 255);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.learn-p:hover.learn-p::before{
+    width: 100%;
+    opacity: 1;
+}
+.learn-items-container:hover .learn-p{
+    color: rgb(67, 67, 255);
+}

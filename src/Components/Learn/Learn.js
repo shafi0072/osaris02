@@ -1,20 +1,23 @@
 import React from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import Contact from '../Home/Contract/Contract';
-import Footer from '../Home/Footer/Footer'
+import Footer from '../Home/Footer/Footer';
+import './Learn.css';
 
 const Learn = () => {
     return (
-        <div>
+        <div className="learn-container">
             <Navbar/>
-                <div>
-                    <div className="d-flex">
-                        <p>Learn Guitar</p>
-                        <p>Join Now</p>
+                <div className="d-flex justify-content-evenly align-items-center py-4">
+                    <div className="text-center learn-items-container p-3">
+                        <h3 className="learn-h3">Learn Guitar</h3>
+                        <p>You can learn guitar to us</p>
+                        <p className="learn-p">Join Now</p>
                     </div>
-                    <div className="d-flex">
-                        <p>Learn Guitar Withinship</p>
-                        <p>Apply Now</p>
+                    <div className="text-center learn-items-container p-3">
+                        <h3 className="learn-h3">Learn Guitar</h3>
+                        <p>You can learn guitar to us</p>
+                        <p className="learn-p">Join Now</p>
                     </div>
                 </div>
             <Contact/>
