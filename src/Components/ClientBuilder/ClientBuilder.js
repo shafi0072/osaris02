@@ -379,6 +379,274 @@ const ClientBuilder = () => {
                         </div>
                     </div>
                     <h2 className="builder-details-title">PAINT & FINISHES</h2>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Paint</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="solid">Solid Color</option>
+                                <option value="through">See through Color</option>
+                                <option value="natural">Natural Wood</option>
+                                <option value="2-tone">2 tone Burst</option>
+                                <option value="3-tone">3 tone Burst</option>
+                                <option value="sparkle">Solid Sparkle Color</option>
+                                <option value="satin">Satin Dye</option>
+                                <option value="burnt">Burnt</option>
+                                <option value="custom">Custom Color</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Finish</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="semi-gloss">Semi-Gloss Hard Lacquer Finish</option>
+                                <option value="hi-gloss">Super Hi-Gloss Lacquer Finish</option>
+                                <option value="satin">Satin Lacquer Finsish</option>
+                                <option value="oil">Oil Finish</option>
+                                <option value="french">French Polish</option>
+                                <option value="nitro">Classic Nitro Finish</option>
+                                <option value="unfinished">Unfinished</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Custom Shop FInish</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="artworks">Artworks/ Paintings</option>
+                                <option value="artist">Artist Inspired</option>
+                                <option value="extreme">Extreme Finishes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h2 className="builder-details-title">HARDWARE</h2>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Tuning Keys</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="fender">6 string Fender Style</option>
+                                <option value="gibson">6 string Gibson Style</option>
+                                <option value="6-mordern">6 String Mordern Style</option>
+                                <option value="7-mordern">7/8 String Mordern Style</option>
+                                <option value="classic">4/5 String Classic Style (Bass)</option>
+                                <option value="mordern">4/5 String Mordern Style (Bass)</option>
+                                <option value="branded">Branded Keys</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Nut</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="bone">Bone Nut</option>
+                                <option value="bronze">Bronze Nut</option>
+                                <option value="graphite">Graphite Nut</option>
+                                <option value="steel">Steel Nut</option>
+                                <option value="plastic">Plastic Nut</option>
+                                <option value="custom">Custom Material Nut</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Bridges</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="tune">Tune O Matic (LP Style)</option>
+                                <option value="wraparound">Wraparound (PRS Style)</option>
+                                <option value="hardtail">Hardtail (Hipshot Style)</option>
+                                <option value="semi-floating">Semi-Floating (Fender/Mordern Style)</option>
+                                <option value="floating">Floating (FR style)</option>
+                                <option value="floyd">Floyd Rose Special</option>
+                                <option value="bigsby">Bigsby (Classic Tremolo)</option>
+                                <option value="saddles">Single Saddles</option>
+                                <option value="4-string">4 String Bass</option>
+                                <option value="5-string">5 String Bass</option>
+                                <option value="6-string">6 String Bass</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Pickups</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="coil">Single Coil</option>
+                                <option value="humbucker">Single Humbucker</option>
+                                <option value="hh-setup">HH Setup</option>
+                                <option value="hsh-setup">HSH Setup</option>
+                                <option value="hss-setup">HSS Setup</option>
+                                <option value="sss">SSS Setup</option>
+                                <option value="ss">SS Setup (Lipstick+Single)</option>
+                                <option value="soapbar">Soapbar (HH Setup)</option>
+                                <option value="emg">EMG Setup (Active)</option>
+                                <option value="seymore">Seymore Duncan '59 (SH-2N)</option>
+                                <option value="bass-single">Bass Single</option>
+                                <option value="humbucker">Bass Humbucker</option>
+                                <option value="seymore">Seymore Duncan</option>
+                                <option value="fishman">FishMan</option>
+                                <option value="bareknuckle">Bareknuckle</option>
+                                <option value="dmarzio">D'marzio</option>
+                                <option value="cusotm">Custom Brands</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Potentiometers</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="250k">250k (Regular)</option>
+                                <option value="500k">500k (Regular)</option>
+                                <option value="cts-250k">CTS 250k</option>
+                                <option value="cts-500k">CTS 500k</option>
+                                <option value="c-capcitor">Custom Capacitor</option>
+                                <option value="cavity">Cavity Shielding</option>
+                                <option value="quality">Best quality wires</option>
+                                <option value="push/pull">Push/Pull</option>
+                                <option value="coil">Coil Split</option>
+                                <option value="kill">Kill Switch</option>
+                                <option value="c-electronics">Custom Electronics</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Selector Switches</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="3-toggle">3 way Toggle</option>
+                                <option value="3-linear">3 way Linear</option>
+                                <option value="5-linear">5 way Linear</option>
+                                <option value="branded">Branded Switch</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Knobs</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="metal">Metal Knobs</option>
+                                <option value="clear">LP Style Clear Hat</option>
+                                <option value="fender">Fender Style Hat</option>
+                                <option value="dual">Dual Knob</option>
+                                <option value="wooden">Wooden Knobs</option>
+                                <option value="custom">Custom Knobs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Output Jacks</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="square">Square Plated (Regular)</option>
+                                <option value="endpin">Endpin/ Cylindic</option>
+                                <option value="mounted">Top Mounted</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Strap Pins</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="regular">Regular Pins</option>
+                                <option value="locking">Locking Pins</option>
+                                <option value="custom">Custom/Branded Pins</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Pickgaurds</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="material">Custom Material</option>
+                                <option value="shape">Custom Shape</option>
+                                <option value="finish">Custom Finish</option>
+                                <option value="strat">Regular Strat Style</option>
+                                <option value="tele">Regular Tele Style</option>
+                                <option value="lp">Regular LP Style</option>
+                                <option value="v-style">Regular V Style</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h2 className="builder-details-title">ACCESSORIES</h2>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Custom Gig Bag</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="fabric">Fabric</option>
+                                <option value="leather">Leather</option>
+                                <option value="artificial">Artificial Leather</option>
+                                <option value="padding-.5">Padding .5''</option>
+                                <option value="padding-1">Padding 1''</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Custom Case</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="artifical">Wrapping Material Artifical Leather</option>
+                                <option value="leather">Wrapping Material Leather</option>
+                                <option value="blanket">Regular Padding Blanket</option>
+                                <option value="soft-padding">Special Soft Fur Padding</option>
+                                <option value="regular-hardware">Regular Hardware</option>
+                                <option value="durable-hardware">Extra Durable Hardware</option>
+                                <option value="custom-color">Custom Color</option>
+                                <option value="custom-design">Custom Design/Initial/Branding</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Strap</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="classic">Classic Custom Ingraved Leather Strap</option>
+                                <option value="mordern">Mordern Custom Ingraved Leather Strap</option>
+                                <option value="artificial">Artificial Leather</option>
+                                <option value="printed">Printed/Ingraved Custom Nylon strap</option>
+                                <option value="custom">Custom Materials/ Color</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="row imfomation-line">
+                        <div className="col-md-3">
+                            <h4>Picks</h4>
+                        </div>
+                        <div className="col-md-9">
+                            <select className="builder-input" name="body" id="cars">
+                                <option value="custom">Custom Signatured Wooden Picks</option>
+                            </select>
+                        </div>
+                    </div>
                 </form>
                 <div className="text-center py-3">
                     <button type="button" class="btn btn-primary">Success</button>
