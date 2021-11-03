@@ -1,0 +1,49 @@
+/* ######## Log in CSS ####### */
+
+.main-login{
+    background-color: rgb(24, 24, 24);
+    height: 100vh;
+}
+.login-logo{
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+.login-title{
+    text-align: center;
+    color: white;
+    
+    margin-bottom: 2%;
+}
+.main-login-container{
+    display: flex;
+    align-items: center;
+}
+.login-container{
+    color: white;
+    width: 30%;
+    height: 60%;
+    padding: 2% 3%;
+    margin: 0 auto;
+    background-color: rgb(43, 43, 43);
+}
+.login-btn{
+    width: 100%;
+}
+.signup-link{
+    color: lightblue;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.signup-link:hover{
+    color: rgb(94, 94, 255);
+}
+
+
+/* ######## Sign Up CSS ########### */
+
+.signup-logo{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}

@@ -18,6 +18,8 @@ import AdminMain from './Components/AdminPane/AdminMain';
 import Gears from './Components/UsedGears/Gears';
 import Care from './Components/G-Care/Care';
 import Learn from './Components/Learn/Learn';
+import Login from './Components/Login/Login';
+import Signup from './Components/Login/Signup';
 const App = () => {
   return (
     <Router>
@@ -34,6 +36,8 @@ const App = () => {
           <Route path = '/blog' exact component = {Blog}/>
           <Route path = '/guitar-details' exact component = {GuitarDetails}/>
           <Route path = '/adminPanel' component={AdminMain}/>
+          <Route path = '/login' component={Login}/>
+          <Route path = '/signup' component={Signup}/>
         </Switch>
     </Router>
   );

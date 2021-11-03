@@ -581,7 +581,7 @@ const ClientBuilder = () => {
                         </div>
                         <div className="col-md-9">
                             <select className="builder-input" name="body" id="cars">
-                                <option value="material">Custom Material</option>
+                                <option value="materialyrn">Custom Material</option>
                                 <option value="shape">Custom Shape</option>
                                 <option value="finish">Custom Finish</option>
                                 <option value="strat">Regular Strat Style</option>
