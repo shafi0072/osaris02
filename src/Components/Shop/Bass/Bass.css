@@ -14,9 +14,12 @@ li{
 }
 .filter-title{
     font-size: 22px;
+    color: white;
+    text-decoration: none;
 }
 .filter-items-container{
     margin-bottom: 5%;
+    
 }
 .card-container{
     padding: 3%;

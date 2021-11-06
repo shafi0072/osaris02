@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import BassCard from './BassCard';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Contact from '../../Home/Contract/Contract';
@@ -100,8 +101,8 @@ const Bass = () => {
                                     </li>
                                 </ul>
                             </li>
-                            {/* <li className="filter-items-container"><Link className="filter-title" to="/gears">Used Gears</Link>
-                            </li> */}
+                            <li className="filter-items-container"><Link className="filter-title" to="/gears">Used Gears</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
