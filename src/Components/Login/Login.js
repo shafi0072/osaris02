@@ -4,7 +4,7 @@ import './Login.css';
 const Login = () => {
     return (
         <div className="main-login">
-            <h1 className="login-logo">OSIRIS</h1>
+            <h1 className="login-logo">OSARIS</h1>
             <h2 className="login-title">Log In</h2>
             <div  className="main-login-container">
                 <div className="login-container">

@@ -9,7 +9,7 @@ const Bass = () => {
         <div className="bass-container">
             <Navbar/>
             <div className="text-center text-light py-2 guiter-text mb-4">
-                <h1>BASSES</h1>
+                <h1>SHOP</h1>
             </div>
             <div className="row">
                 <div className="col-md-3 text-light filter-container">
@@ -100,6 +100,8 @@ const Bass = () => {
                                     </li>
                                 </ul>
                             </li>
+                            {/* <li className="filter-items-container"><Link className="filter-title" to="/gears">Used Gears</Link>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

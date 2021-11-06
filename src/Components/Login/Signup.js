@@ -4,7 +4,7 @@ import './Login.css';
 const Signup = () => {
     return (
         <div className="main-login">
-            <h1 className="signup-logo">OSIRIS</h1>
+            <h1 className="signup-logo">OSARIS</h1>
             <h2 className="login-title">Create an account</h2>
             <div  className="main-login-container">
                 <div className="login-container">
