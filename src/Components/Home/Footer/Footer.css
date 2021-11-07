@@ -2,8 +2,8 @@
     background-color: rgb(36, 36, 36);
 }
 .footer-items-container{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid #86868b;
+    border-bottom: 2px solid #86868b;
 }
 .footer-items{
     width: 80%;
@@ -13,11 +13,11 @@
 .li-item{
     color: white;
     list-style: none;
-    font-weight: bold;
     cursor: pointer;
+    transition: all .3s ease;
 }
 .li-item:hover{
-    color: rgb(192, 192, 192);
+    color: #86868b;
 }
 .logo{
     color: white;
@@ -30,11 +30,12 @@
     margin: 0 auto;
 }
 .footer-icon{
-    color: white;
+    color: #1561f0;
     font-size: 30px!important;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease!important;
+    cursor: pointer;
 }
 .footer-icon:hover{
-    color: rgb(81, 113, 255);
+    color: #e9322e;
     font-size: 35px!important;
 }

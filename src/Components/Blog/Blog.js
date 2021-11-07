@@ -22,10 +22,10 @@ const Blog = () => {
                     <div className="col-md-6">
                         <div>
                             <div className="row blog2-items me-1">
-                                <div className="col-md-8">
+                                <div className="col-md-8 py-2">
                                     <h3>This is blog Title</h3>
                                     <p>Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-                                    <a>Reading Continue</a>
+                                    <a className="blog2-a">Reading Continue</a>
                                 </div>
                                 <div className="col-md-4 p-0">
                                     <img className="blogs-img" src={Blog1}/>
@@ -35,10 +35,10 @@ const Blog = () => {
                     </div>
                     <div className="col-md-6">
                         <div className="row blog2-items ms-1">
-                            <div className="col-md-8">
+                            <div className="col-md-8 py-2">
                                 <h3>This is blog Title</h3>
                                 <p>Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-                                <a>Reading Continue</a>
+                                <a className="blog2-a">Reading Continue</a>
                             </div>
                             <div className="col-md-4 p-0">
                                 <img className="blogs-img" src={Blog1}/>

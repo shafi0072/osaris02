@@ -38,7 +38,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: #9615db;
     z-index: -1;
     transition: all .4s ease-in-out;
 }
@@ -60,11 +60,11 @@
 }
 .gears-sell-button{
     width: 10%;
-    font-weight: bold;
     transition: all .3s ease-in-out;
+    border: none;
 }
 .gears-sell-button:hover{
-    background-color: blue;
+    background-color: #9615db;
     letter-spacing: .6px;
 }
 .review-container{
@@ -72,10 +72,14 @@
     margin: 0 auto;
     text-align: center;
 }
+.review-items-container{
+    background-color: #2b2b2b;
+    padding: 4% 5%;
+}
 .review-img{
-    width: 40%;
-    height: auto;
-    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    width: 30%;
+    height: 10vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     position: relative;
 }
 

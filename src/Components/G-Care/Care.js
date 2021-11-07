@@ -18,7 +18,7 @@ const Care = () => {
                     <h1>About</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus tellus lorem, a auctor dui rutrum eget. Nulla facilisi. Vivamus consequat neque at nisl facilisis convallis. Sed ut imperdiet massa. Aenean a aliquam justo. Vivamus blandit ipsum non risus dignissim iaculis. Donec posuere vehicula nunc vel lacinia</p>
                 </div>
-                <div className="video-container">
+                <div className="video-container my-5">
                     <iframe className="care-video"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY">
                     </iframe>
@@ -50,10 +50,52 @@ const Care = () => {
                     </div>
                 </div>
                 <div className="py-3 text-center">
-                        <input className="btn btn-primary gears-sell-button" type="submit" value="Booked Now"/>
+                        <input className="btn btn-primary gears-sell-button" type="submit" value="Show All"/>
                 </div>
-                <div className="review-container">
+                <div className="review-container py-4">
                     <div className="row">
+                        <div className="col-md-3">
+                            <div className="review-items-container">
+                                <img className="review-img" src={Img}/>
+                                <div className="review-text">
+                                    <h3>Raktim Proloy</h3>
+                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarBorderIcon/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="review-items-container">
+                                <img className="review-img" src={Img}/>
+                                <div className="review-text">
+                                    <h3>Raktim Proloy</h3>
+                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarBorderIcon/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="review-items-container">
+                                <img className="review-img" src={Img}/>
+                                <div className="review-text">
+                                    <h3>Raktim Proloy</h3>
+                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarIcon/>
+                                    <StarBorderIcon/>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col-md-3">
                             <div className="review-items-container">
                                 <img className="review-img" src={Img}/>

@@ -649,7 +649,7 @@ const ClientBuilder = () => {
                     </div>
                 </form>
                 <div className="text-center py-3">
-                    <button type="button" class="btn btn-primary">Success</button>
+                    <button type="button" class="btn btn-primary builder-btn">Submit Now</button>
                 </div>
                 <div className="builder-banner py-4">
                     <img className="builder-banner-img" src={Img}/>

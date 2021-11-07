@@ -23,12 +23,12 @@ img{
 }
 .img-link{
     font-size: 27px;
-    color: rgb(86, 86, 255);
+    color: #1561f0;
     text-decoration: none;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease;
 }
 .img-link:hover{
-    color: rgb(44, 44, 255);
+    color: #e9322e;
 }
 .img2-container{
     position: relative;
