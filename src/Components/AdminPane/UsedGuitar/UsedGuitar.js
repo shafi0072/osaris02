@@ -80,7 +80,7 @@ const UsedGuitar = () => {
         formData.append('youtubeLink', guitar.youtubeLink);
 
 
-        fetch('https://osaris-backend.herokuapp.com/usedGuitar/',{
+        fetch('http://localhost:5000/usedGuitar/',{
             method:"POST",
             body:formData,
         })
