@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{createContext, useState} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,9 +20,25 @@ import Care from './Components/G-Care/Care';
 import Learn from './Components/Learn/Learn';
 import Login from './Components/Login/Login';
 import Signup from './Components/Login/Signup';
+export const userContext = createContext()
 const App = () => {
+  const [user, setUser] = useState({
+    dashboard:true,
+    guitars:false,
+    useGuitar:false,
+    stock:false,
+    category:false,
+    slider:false,
+    merch:false,
+    artist: false,
+    contact: false,
+    gcare:false,
+    blog:false,
+    learn:false
+  })
   return (
-    <Router>
+    <userContext.Provider value={[user, setUser]}>
+      <Router>
         <Switch>
           <Route path = '/' exact component={HomeMain}/>
           <Route path = '/guitar' exact component={Guitar}/>
@@ -40,6 +56,7 @@ const App = () => {
           <Route path = '/signup' component={Signup}/>
         </Switch>
     </Router>
+    </userContext.Provider>
   );
 };
 
