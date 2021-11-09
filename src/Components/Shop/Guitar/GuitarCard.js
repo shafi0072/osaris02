@@ -28,7 +28,7 @@ const GuitarCard = (props) => {
                 <div className="card-container text-light">
                     <h3>{title}</h3>
                     <p>Bolt-On</p>
-                    <img className="card-img my-3" src={`https://osaris-backend.herokuapp.com/${imageOne}`}/>
+                    <img className="card-img my-3" src={`http://localhost:5000/${imageOne}`}/>
                     <div className="price-container mt-4">
                         <span className="price-text">Starting At </span>
                         <span className="price-amount"> ${pricing}</span>

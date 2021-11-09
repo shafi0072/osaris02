@@ -11,7 +11,7 @@ const AdminMain = () => {
     return (
         <div className="bg-dark row pb-4 " style={{height:''}}>
         <Navbar/>
-            <div className="col-md-3">
+            <div className="col-md-3 bg-dark">
                 <SidebarMain/>
             </div>
             <div className="col-md-9 mainClor">

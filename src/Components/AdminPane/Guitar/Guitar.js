@@ -22,7 +22,7 @@ const Guitar = () => {
         strings:'',
         tuners:'',
         weight:'',
-        cat:'',
+        cat:'guitar',
         youtubeLink:'',
 
     })
@@ -93,7 +93,7 @@ const Guitar = () => {
         e.preventDefault();
     }
     return (
-        <div className=' text-light'>
+        <div className='bg-dark text-light'>
             <h1 className="mb-5 mt-2">Upload Your Guitar Details In Here</h1>
             <form action="" onSubmit={handleOnSubmit}>
                 <label className='input-item-name' htmlFor="">Model Name</label>
@@ -162,9 +162,7 @@ const Guitar = () => {
                 <label className='input-item-name' htmlFor="">weight</label>
                 <label className="colon">:</label>
                 <input className="input-box" type="text" name="weight" id="" placeholder="Enter the tuners of guitar" onChange={handleOnChange}/><br /><br />
-                <label className='input-item-name' htmlFor="">category</label>
-                <label className="colon">:</label>
-                <input className="input-box" type="text" name="cat" id="" placeholder="Enter the category of guitar" onChange={handleOnChange}/><br /><br />
+                
                 <label className='input-item-name' htmlFor="">youtubeLink</label>
                 <label className="colon">:</label>
                 <input className="input-box" type="text" name="youtubeLink" id="" placeholder="Enter the youtubeLink of guitar" onChange={handleOnChange}/><br /><br />

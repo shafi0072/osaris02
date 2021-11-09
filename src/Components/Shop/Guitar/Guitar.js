@@ -11,7 +11,7 @@ const Guitar = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://osaris-backend.herokuapp.com/guitar/')
+        fetch('http://localhost:5000/guitar/')
     .then(res => res.json())
     .then(data => setData(data))
     .catch(err => console.log(err))
