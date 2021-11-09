@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Contact from '../../Home/Contract/Contract';
 import Footer from '../../Home/Footer/Footer';
@@ -7,9 +7,38 @@ import Guitar2 from '../../../Resorce/Img/am7.png';
 import Guitar3 from '../../../Resorce/Img/am8.png';
 import GuitarGallery from './../../../Resorce/Img/am6-monster-burst.jpg';
 import './GuitarDetails.css';
+import { useParams } from 'react-router-dom';
 
 
 const GuitarDetails = () => {
+    const {id} = useParams()
+    const [signleData, setSingleData] = useState([]);
+  useEffect(() => {
+        fetch(`http://localhost:5000/guitar/${id}`)
+        .then(res => res.json())
+        .then(data => setSingleData(data))
+        .catch(err => console.log(err))
+    },[id])
+    const {title,description,pricing,
+        body,
+        bridge,
+        dimensions,
+        electronics,
+        fringerboard,
+        frets,
+        hardware,
+        inlys,
+        neck,
+        neckWidth,
+        notes,
+        pickups,
+        scaleLength,
+        strings,
+        tuners,
+        weight,
+        cat,
+        youtubeLink, _id, imageOne, imageTwo, imageThree} = signleData
+    console.log(signleData)
     return (
         <div className="guitar-details-container">
             <Navbar/>
@@ -17,20 +46,20 @@ const GuitarDetails = () => {
                 <div className="row py-5">
                     <div className="col-md-3">
                         <ul>
-                            <li className="guitar-img-container mb-3"><img className="guitar-img" src={Guitar1}/></li>
-                            <li className="guitar-img-container mb-3"><img className="guitar-img" src={Guitar2}/></li>
-                            <li className="guitar-img-container"><img className="guitar-img" src={Guitar3}/></li>
+                            <li className="guitar-img-container mb-3"><img className="guitar-img" src={`http://localhost:5000/${imageOne}`}/></li>
+                            <li className="guitar-img-container mb-3"><img className="guitar-img"  src={`http://localhost:5000/${imageTwo}`}/></li>
+                            <li className="guitar-img-container"><img className="guitar-img" src={`http://localhost:5000/${imageThree}`}/></li>
                         </ul>
                     </div>
                     <div className="col-md-6">
                         <div>
-                            <img className="guitar-main-img" src={Guitar1}/>
+                            <img className="guitar-main-img" src={`http://localhost:5000/${imageOne}`}/>
                         </div>
                     </div>
                     <div className="col-md-3">
                         <div>
                             <div className="buy-container-details">
-                                <h1 className="buy-h1">ARIES</h1>
+                                 <h1 className="buy-h1">{title}</h1>
                                 <h3 className="buy-h3">BOLT-ON</h3>
                                 <p className="buy-p">Available in 6, 7 and 8 strings</p>
                                 <p className="buy-p">Starting At</p>
@@ -53,15 +82,15 @@ const GuitarDetails = () => {
                 <div>
                     <h2 className="details-title">Gallery</h2>
                     <div className="row">
-                        <div className="col-md-6 p-0"><img className="gallery-big" src={GuitarGallery}/></div>
-                        <div className="col-md-6 p-0"><img className="gallery-big" src={GuitarGallery}/></div>
+                        <div className="col-md-6 p-0"><img className="gallery-big" src={`http://localhost:5000/${imageOne}`}/></div>
+                        <div className="col-md-6 p-0"><img className="gallery-big"   src={`http://localhost:5000/${imageTwo}`}/></div>
                     </div>
                     <div className="row">
                         <div className="col-md-3 p-0">
-                            <img className="gallery-big" src={GuitarGallery}/>
+                            <img className="gallery-big" src={`http://localhost:5000/${imageOne}`}/>
                         </div>
                         <div className="col-md-3 p-0">
-                            <img className="gallery-big" src={GuitarGallery}/>
+                            <img className="gallery-big"  src={`http://localhost:5000/${imageTwo}`}/>
                         </div>
                         <div className="col-md-3 p-0">
                             <img className="gallery-big" src={GuitarGallery}/>

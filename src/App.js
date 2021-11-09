@@ -50,7 +50,7 @@ const App = () => {
           <Route path = '/artist' exact component = {Artist}/>
           <Route path = '/learn' exact component = {Learn}/>
           <Route path = '/blog' exact component = {Blog}/>
-          <Route path = '/guitar-details' exact component = {GuitarDetails}/>
+          <Route path = '/guitar/:id' exact component = {GuitarDetails}/>
           <Route path = '/adminPanel' component={AdminMain}/>
           <Route path = '/login' component={Login}/>
           <Route path = '/signup' component={Signup}/>
