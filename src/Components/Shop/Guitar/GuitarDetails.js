@@ -64,7 +64,7 @@ const GuitarDetails = () => {
                                 
                                 <p className="buy-p">Available in 6, 7 and 8 strings</p>
                                 <p className="buy-p">Starting At</p>
-                                <h2 className="buy-h2">$<span>{pricing}</span></h2>
+                                <h2 className="buy-h2">$ <span>{pricing}</span></h2>
                             </div>
                             <div>
                                 <p className="buy-p">Or a deposit of: <span className="buy-amount"> $260</span> with <span>Partial.ly</span>

@@ -9,13 +9,36 @@ import './Guitar.css';
 
 const Guitar = () => {
     const [data, setData] = useState([]);
-
+    const [modeExpand, setModelExpand] = useState({
+        click:false,
+        price:false
+    })
     useEffect(() => {
         fetch('http://localhost:5000/guitar/')
     .then(res => res.json())
     .then(data => setData(data))
     .catch(err => console.log(err))
-    },[])
+    },[]);
+    const handleExpand = () => {
+        const newExpand = {...modeExpand}
+        newExpand.click = true;
+        setModelExpand(newExpand)
+    }
+    const handleExpand2 = () => {
+        const newExpand = {...modeExpand}
+        newExpand.click = false;
+        setModelExpand(newExpand)
+    }
+    const priceExpand = () => {
+        const newExpand = {...modeExpand}
+        newExpand.price = true;
+        setModelExpand(newExpand)
+    }
+    const priceExpand2 = () => {
+        const newExpand = {...modeExpand}
+        newExpand.price = false;
+        setModelExpand(newExpand)
+    }
     return (
         <div className="guiter-container">
             <Navbar/>
@@ -51,8 +74,9 @@ const Guitar = () => {
                             </li> */}
                             <li className="filter-items-container">
                                 <span className="filter-title">Model Type</span>
-                                <span><KeyboardArrowDownIcon className="arrow"/></span>
-                                <ul>
+                                {!modeExpand.click &&<span><KeyboardArrowDownIcon className="arrow" onClick={handleExpand}/></span>}
+                                {modeExpand.click &&<span><KeyboardArrowDownIcon className="arrow" onClick={handleExpand2}/></span>}
+                                {modeExpand.click && <ul>
                                     <li>
                                         <input type="checkbox"/>
                                         <span> Standard (27)</span>
@@ -65,7 +89,7 @@ const Guitar = () => {
                                         <input type="checkbox"/>
                                         <span> Acoustic (4)</span>
                                     </li>
-                                </ul>
+                                </ul>}
                             </li>
                             {/* <li className="filter-items-container">
                                 <span className="filter-title">Headstock Construction</span>
@@ -101,9 +125,9 @@ const Guitar = () => {
                             </li> */}
                             <li className="filter-items-container">
                                 <span className="filter-title">Price</span>
-                                <span><KeyboardArrowDownIcon className="arrow"/></span>
-                            
-                                <ul>
+                                {!modeExpand.price && <span><KeyboardArrowDownIcon className="arrow" onClick={priceExpand}/></span>}
+                                {modeExpand.price && <span><KeyboardArrowDownIcon className="arrow" onClick={priceExpand2}/></span>}
+                               {modeExpand.price && <ul>
                                     <li>
                                         <input type="checkbox"/>
                                         <span> $1200 - $1500 (15)</span>
@@ -120,7 +144,7 @@ const Guitar = () => {
                                         <input type="checkbox"/>
                                         <span>  $2500 & Above (15)</span>
                                     </li>
-                                </ul>
+                                </ul>}
                             </li>
                         </ul>
                         <div className="d-flex">
