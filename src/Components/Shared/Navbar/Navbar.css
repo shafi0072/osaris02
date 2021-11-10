@@ -30,3 +30,6 @@
 .navbar-icon:hover{
     color: rgb(177, 177, 177);
 }
+.listPadding{
+    margin-right: 10%!important;
+}

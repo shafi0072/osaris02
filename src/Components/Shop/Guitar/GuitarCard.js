@@ -25,8 +25,8 @@ const GuitarCard = (props) => {
     youtubeLink, _id, imageOne, imageTwo, imageThree} = props.data
     return (
         
-            <div className="col-md-4">
-               <Link to={`/guitar/${_id}`}>
+            <div className="col-md-4 mb-5">
+               <Link to={`/guitar/${_id}`} style={{textDecoration:'none'}}>
                <div className="card-container text-light">
                     <h3>{title}</h3>
                     <p>Bolt-On</p>
