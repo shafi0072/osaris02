@@ -1,6 +1,6 @@
 import React from 'react';
-import Image1 from '../../../Resorce/Img/Img1.jpg';
-import Image2 from '../../../Resorce/Img/Img2.jpg';
+import Image1 from '../../../Resorce/Web cover 3.jpg';
+import Image2 from '../../../Resorce/y.png';
 import Image3 from '../../../Resorce/Img/Img3.jpg';
 import Image4 from '../../../Resorce/Img/Img4.jpg';
 import './Category.css';
@@ -12,17 +12,15 @@ const Category = () => {
                 <div className="col-md-6 img1-container img1-hover">
                     <img className="img1" src={Image1} alt="" />
                     <div className="img1-text">
-                        <h3 className="img-h3">HEADLESS</h3>
-                        <h1 className="img-h1">K-SERIES</h1>
-                        <p className="img-p">75Th Anniversary Model</p>
-                        <a className="img-link" href="#">Learn More</a>
+                        <h3 className="img-h3 text-light">Artist <br /> Signature</h3>
+                        
                     </div>
                 </div>
                 <div className="col-md-6 img1-container img2-hover">
                     <img className="img2" src={Image2} alt="" />
                     <div className="img2-text">
-                        <h1 className="img-h1">SKIP THE WAIT</h1>
-                        <p className="img-p">See What we Have Available In Stock</p>
+                        <h3 className="featured-Image">FEATURED OF <br /> THE MONTH</h3>
+                        
                     </div>
                 </div>
             </div>

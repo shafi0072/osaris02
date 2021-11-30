@@ -2,10 +2,8 @@ import React, {useEffect, useState} from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Contact from '../../Home/Contract/Contract';
 import Footer from '../../Home/Footer/Footer';
-import Guitar1 from '../../../Resorce/Img/a6h-main-137637.png';
-import Guitar2 from '../../../Resorce/Img/am7.png';
-import Guitar3 from '../../../Resorce/Img/am8.png';
-import GuitarGallery from './../../../Resorce/Img/am6-monster-burst.jpg';
+
+
 import './GuitarDetails.css';
 import {useParams} from 'react-router-dom';
 
@@ -53,8 +51,8 @@ const GuitarDetails = () => {
                 <div className="row py-5">
                     
                     <div className="col-md-6">
-                        <div>
-                            <img className="guitar-main-img" style={{maxWidth:'100%'}} src={`http://localhost:5000/${imageOne}`}/>
+                        <div className="d-flex justify-content-center">
+                        {signleData.imageOne && <img src={`data:${imageOne.contentType};base64,${imageOne.img}`} class="card-img-top" style={{width:'25%'}} alt="..."/>}
                         </div>
                     </div>
                     <div className="col-md-3">
@@ -93,7 +91,7 @@ const GuitarDetails = () => {
                                 style={{
                                     width: "18rem"
                                 }}>
-                                <img class="card-img-top" src={`http://localhost:5000/${imageOne}`} alt="..."/>
+                                {signleData.imageOne && <img src={`data:${imageOne.contentType};base64,${imageOne.img}`} class="card-img-top" alt="..."/>}
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>
@@ -106,7 +104,7 @@ const GuitarDetails = () => {
                                 style={{
                                     width: "18rem"
                                 }}>
-                                <img src={`http://localhost:5000/${imageTwo}`} class="card-img-top" alt="..."/>
+                                {signleData.imageTwo && <img src={`data:${imageTwo.contentType};base64,${imageTwo.img}`} class="card-img-top" alt="..."/>}
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>
@@ -119,7 +117,7 @@ const GuitarDetails = () => {
                                 style={{
                                     width: "18rem"
                                 }}>
-                                <img src={`http://localhost:5000/${imageThree}`} class="card-img-top" alt="..."/>
+                               {signleData.imageThree && <img src={`data:${imageThree.contentType};base64,${imageThree.img}`} class="card-img-top" alt="..."/>}
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>

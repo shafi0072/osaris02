@@ -16,7 +16,7 @@ img{
     font-size: 35px;
 }
 .img-h1{
-    font-size: 65px;
+   
 }
 .img-p{
     font-size: 30px;
@@ -92,4 +92,9 @@ img{
 }
 .img4-hover:hover{
     transform: translateY(10px);
+}
+.featured-Image{
+    margin-top: 100%;
+    
+    
 }

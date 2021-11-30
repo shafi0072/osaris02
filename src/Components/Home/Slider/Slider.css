@@ -1,5 +1,5 @@
 .slider-height{
-    height: 85vh;
+    height: 100vh;
 }
 .slider-margin{
     margin-bottom: 50%;
@@ -22,11 +22,43 @@
     top: 5%;
     font-size: 45px;
     font-weight: bold;
+    color: white;
 }
 .slider-p{
-    font-size: 25px;
+   
     color: rgb(139, 139, 139);
 }
 .slider-text-container{
     bottom: -2.75rem;
+}
+.caroselText{
+    right: 50%;
+    bottom: 3.25rem;
+    left: 2%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    position: absolute;
+    text-align: start;
+}
+.ButtonHomeCar{
+   
+    background: none;
+    border: 5px solid #a2102d;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+.bg-car1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.199)), url(../../../Resorce/IMG_1699.JPG);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainContentnCar{
+    margin-top: 10%;
+    margin-left: 3%;
 }

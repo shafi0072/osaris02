@@ -1,18 +1,9 @@
-.builder-img{
-    width: 100%;
-    margin: 0.4% 0;
-    height: 70vh;
-    
-}
 .slider-img-containter{
-    position: relative;
-}
-.builder-text{
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    top: 100%;
-    display: block;
-    text-align: center;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.253)), url(../../../Resorce/siddharth-pawaskar-2-image-close.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15%;
     color: white;
 }
