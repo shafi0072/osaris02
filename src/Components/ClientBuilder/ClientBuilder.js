@@ -3,8 +3,8 @@ import Navbar from '../Shared/Navbar/Navbar';
 import Contract from '../Home/Contract/Contract';
 import Footer from '../Home/Footer/Footer';
 import Img from '../../Resorce/Img/Img1.jpg';
-import Banner from './banner';
 import './ClientBuilder.css';
+import Banner from './Banner.jsx';
 
 const ClientBuilder = () => {
     return (
