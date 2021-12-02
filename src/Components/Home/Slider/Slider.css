@@ -50,6 +50,7 @@
     height: 50px;
     color: white;
     font-weight: bolder;
+    transition: all 0.2s ease-in-out;
 }
 .bg-car1{
     background-image:linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.199)), url(../../../Resorce/IMG_1699.JPG);
@@ -59,6 +60,10 @@
     background-size: cover;
 }
 .mainContentnCar{
-    margin-top: 10%;
+    font-family: ;
+    margin-top: 20%;
     margin-left: 3%;
+}
+.ButtonHomeCar:hover{
+    background-color: #a2102d;
 }

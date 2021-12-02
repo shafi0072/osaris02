@@ -3,17 +3,21 @@ img{
     height: auto;
 }
 .img1-container{
-    position: relative;
+    
+   
 }
 .img1-text{
-    position: absolute;
-    top: 0;
-    left: 3%;
+    
+    
+   
     margin-top: 10%;
     margin-left: 5%;
+    
 }
 .img-h3{
-    font-size: 35px;
+    font-size: 36px;
+    margin-top: 18px;
+    margin-left: 15px;
 }
 .img-h1{
    
@@ -31,35 +35,30 @@ img{
     color: #e9322e;
 }
 .img2-container{
-    position: relative;
+  
 }
 .img2-text{
-    position: absolute;
-    top: 0;
-    left: 15%;
-    margin-top: 10%;
+    
+    
+   
     color: white;
-    text-align: center;
+   
 }
 .img3-container{
-    position: relative;
+   
 }
 .img3-text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 10%;
+   
+   
     margin-left: 15%;
     width: 80%;
     color: white;
 }
 .img4-container{
-    position: relative;
+    
 }
 .img4-text{
-    position: absolute;
-    top: 0;
-    left: 2%;
+   
     width: 60%;
     margin-top: 10%;
     margin-left: 5%;
@@ -94,7 +93,53 @@ img{
     transform: translateY(10px);
 }
 .featured-Image{
-    margin-top: 100%;
+    
+    margin-top: 38vh;
+     margin-left: 20px;
+    color: white;
     
     
+}
+.img01-text{
+    background-image: url(../../../Resorce/Webcover3.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 49vh;
+    padding: 10px;
+}
+.img02-text{
+    background-image: url(../../../Resorce/z.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 49vh;
+    padding: 10px;
+}
+.img03-text{
+    background-image: url(../../../Resorce/port4.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 49vh;
+    padding: 10px;
+}
+.img04-text{
+    background-image: url(../../../Resorce/PainkillerRevised.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 49vh;
+    padding: 10px;
+}
+.mainrow1{
+    height: 327px;
+    
+}
+.sr{
+    margin-bottom: 1rem!important;
 }

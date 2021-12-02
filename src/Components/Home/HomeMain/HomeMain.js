@@ -6,6 +6,7 @@ import Contract from '../Contract/Contract';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Slider from '../Slider/Slider';
+import MadeLocation from './../MadeLocation/MadeLocation';
 
 const HomeMain = () => {
     return (
@@ -14,7 +15,8 @@ const HomeMain = () => {
             <Slider/>
             <Builder/>
             <Category/>
-            <Contract/>
+            <MadeLocation/>
+            {/* <Contract/> */}
             <Footer/>
         </div>
     );

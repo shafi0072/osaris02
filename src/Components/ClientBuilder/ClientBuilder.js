@@ -3,12 +3,14 @@ import Navbar from '../Shared/Navbar/Navbar';
 import Contract from '../Home/Contract/Contract';
 import Footer from '../Home/Footer/Footer';
 import Img from '../../Resorce/Img/Img1.jpg';
+import Banner from './banner';
 import './ClientBuilder.css';
 
 const ClientBuilder = () => {
     return (
         <div className="clientBuilder-container">
             <Navbar/>
+            <Banner/>
             <div>
                 <div className="py-5 text-center builder-about">
                     <h1>BUILDER DETAILS</h1>
@@ -655,7 +657,7 @@ const ClientBuilder = () => {
                     <img className="builder-banner-img" src={Img}/>
                 </div>
             </div>
-            <Contract/>
+            
             <Footer/>
         </div>
     );
