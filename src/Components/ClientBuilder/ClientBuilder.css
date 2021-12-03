@@ -42,3 +42,40 @@
     background-color: #9615db;
     letter-spacing: .6px;
 }
+.mainBanner{
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.959)), url(../../Resorce/5747535.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.mainBanner h1{
+    padding-top: 10%;
+    font-size: 400%;
+}
+.maincategoryOfbuild{
+    background-color: black;
+}
+.buildDivision{
+    text-align: center;
+    width: 40%;
+    border-bottom: 10px solid #a3102d;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.categoryDv{
+    border-radius: 15px;
+    text-align: center;
+    border: 5px solid white;
+    width: 250px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.categoryDv:hover{
+    background-color: #a3102d;
+    border-radius: 15px;
+    text-align: center;
+    border: 5px solid #a3102d;
+   
+}
