@@ -1,9 +1,10 @@
 import React from 'react';
-
+import img from "../../Resorce/5747535.jpg"
 const Banner = () => {
     return (
+
         <div>
-            <h1>Hello World</h1>
+            <img src={img} alt="image" />
         </div>
     );
 };
