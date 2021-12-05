@@ -26,6 +26,9 @@ const BuildCategory = () => {
                     </div>
                 </div>
             </div>
+            <div>
+                
+            </div>
         </div>
     );
 };
