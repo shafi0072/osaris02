@@ -79,3 +79,72 @@
     border: 5px solid #a3102d;
    
 }
+
+
+
+.BuilderInput{
+    background-color: black;
+    height: 6000px;
+    width: 100%;
+    color: white;
+    padding-top: 100px;
+    
+
+}
+
+.first-h1{
+    font-size: 300%;
+    text-align: center;
+}
+.first-p{
+    text-align: center;
+}
+.second-h1{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 10px solid #a3102d;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.head{
+    font-size: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+
+}
+
+.line{
+    border-bottom: 1px solid white; 
+}
+
+.Selection{
+
+    font-size: 17px;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+    width: 60%;
+    float: right;
+    margin-top: 20px;
+
+
+}
+
+.Selection:hover{
+
+    background-color: #a3102d;
+    border-color: #a3102d;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+
