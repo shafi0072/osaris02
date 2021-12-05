@@ -1,11 +1,13 @@
 import React from 'react';
-
-const banner = () => {
+import './ClientBuilder.css'
+const Banner = () => {
     return (
-        <div>
-            <h1 className='text-light'>Hello world</h1>
+        <div className="mainBanner">
+            <h1 className='text-light h1'>FIRST TIME IN BANGLADESH</h1>
+            <p className='text-light p'>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur <br />
+There is no one who loves pain itself, who seeks after it and wants to have it, simply</p>
         </div>
     );
 };
 
-export default banner;
+export default Banner;
