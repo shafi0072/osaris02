@@ -4,6 +4,8 @@ import Banner from "./Banner";
 import BuildCategory from './BuildCategory.js';
 import BuilderInput from './BuilderInput';
 import Footer from './../Home/Footer/Footer';
+import WoodCollection from './WoodCollection';
+
 
 const ClientBuilder = () => {
     return (
@@ -11,6 +13,7 @@ const ClientBuilder = () => {
             <Navbar/>
             <Banner/>
             <BuildCategory/>
+            <WoodCollection/>
             <BuilderInput/>
             <Footer/>
         </div>

@@ -158,5 +158,13 @@
   
     margin-top: 20px;
 }
-
+.woodCollection{
+    background-image: url(../../Resorce/Wood/backgroundOfWood.jpg);
+    height: 80vh;
+    overflow: scroll;
+}
+.woodCollection::-webkit-scrollbar {
+    display: none;
+  }
+ 
 
