@@ -22,21 +22,7 @@ const Footer = () => {
 
            
            <div className="footer-copyright-container mt-3 ">
-           <div className="row container d-flex justify-content-between  mt-5">
-                <div className="col-md-4 text-center">
-                    <CallIcon style={{color:'white'}}/>
-                    <span className="text-light ms-2">+8801305775556</span>
-                </div>
-                <div className="col-md-4 text-center">
-                    <AlternateEmailIcon style={{color:'white'}}/>
-                    <span className="text-light ms-2">bluesden.official@gmail.com</span>
-                </div>
-                <div className="col-md-4 text-center">
-                    <LocationOnIcon style={{color:'white'}}/>
-                    <span className="text-light ms-2">
-29/13 Tajmahal Road, Block -C, Mohammmadpur 1207 Dhaka, Dhaka Division, Bangladesh</span>
-                </div>
-           </div>
+          
                <div class="row mt-3">
                    <div className="col-md-2 logo">
                    <ul className="d-flex justify-content-center align-item-center">

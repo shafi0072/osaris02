@@ -2,14 +2,15 @@ import React from 'react';
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
 const BuilderInput = () => {
     return (
-        <div className="BuilderInput">
+        <form className="BuilderInput">
 
             <h1 className="first-h1">Let's Start</h1>
             <p className="first-p"> Choose Your Guitar Parts</p>
 
             <div class="container">
-                <div class="col-6">
-                    <div class="row-1">
+            <div className="row">
+            <div class="col-md-6">
+                    <div class="row">
                         <h1 className="second-h1" >Body</h1>
                         <div class="line">
                             <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
@@ -33,7 +34,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Body-Construction"><h6 class="head">Body Construction</h6></label>
                             <select class="Selection">
@@ -45,7 +46,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Body-Shapes"><h6 class="head">Body Shapes</h6></label>
                             <select class="Selection">
@@ -72,7 +73,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Body-Curves"><h6 class="head">Body Curves</h6></label>
                             <select class="Selection">
@@ -85,7 +86,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Body-Cavities"><h6 class="head">Body Cavities</h6></label>
                             <select class="Selection">
@@ -99,7 +100,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Body-Construction"><h6 class="head">Body Construction</h6></label>
                             <select class="Selection">
@@ -111,10 +112,15 @@ const BuilderInput = () => {
                         </div>
                     </div>        
                 </div>
+                <div className="col-md-6">
+
+                </div>
+            </div>
             
 
-                <div class="col-6">
-                    <div class="row-1">
+               <div className='row'>
+               <div class="col-6">
+                    <div class="row">
                         <h1 className="second-h1" >Neck</h1>
                         <div class="line">
                             <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
@@ -128,7 +134,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Neck-Construction"><h6 class="head">Neck Construction</h6></label>
                             <select class="Selection">
@@ -139,7 +145,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Headstocks"><h6 class="head">Headstocks</h6></label>
                             <select class="Selection">
@@ -152,7 +158,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Headstock-Angles"><h6 class="head">Headstock Angles</h6></label>
                                 <select class="Selection">
@@ -162,7 +168,7 @@ const BuilderInput = () => {
                                 </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Neck-Taping"><h6 class="head">Neck Taping</h6></label>
                                 <select class="Selection">
@@ -175,7 +181,7 @@ const BuilderInput = () => {
                                 </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Truss-Rod"><h6 class="head">Truss Rod</h6></label>
                             <select class="Selection">
@@ -188,7 +194,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Neck-Assembly"><h6 class="head">Neck Assembly</h6></label>
                             <select class="Selection">
@@ -201,10 +207,12 @@ const BuilderInput = () => {
                         </div>
                     </div>            
                 </div>
+               </div>
 
 
-                <div class="col-6">
-                    <div class="row-1">
+                <div className="row">
+                <div class="col-md-6">
+                    <div class="row">
                         <h1 className="second-h1" >Fret Board</h1>
                         <div class="line">
                             <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
@@ -217,7 +225,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Scale-Lenths"><h6 class="head">Scale Lenths<p>(Guitars & Basses)</p></h6></label>
                             <select class="Selection">
@@ -241,7 +249,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Fret-Numbers"><h6 class="head">Fret Numbers</h6></label>
                             <select class="Selection">
@@ -253,7 +261,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Fretboard-Radius"><h6 class="head">Fretboard Radius</h6></label>
                             <select class="Selection">
@@ -269,7 +277,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Inlays"><h6 class="head">Inlays</h6></label>
                             <select class="Selection">
@@ -281,7 +289,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Inlay-Material"><h6 class="head">Inlay Material</h6></label>
                             <select class="Selection">
@@ -293,7 +301,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Body+Neck Binding"><h6 class="head">Body+Neck Binding</h6></label>
                             <select class="Selection">
@@ -303,7 +311,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Fretwires"><h6 class="head">Fretwires</h6></label>
                             <select class="Selection">                              
@@ -315,10 +323,12 @@ const BuilderInput = () => {
                         </div>
                     </div>
                 </div>
+                </div>
 
 
-                <div class="col-6">
-                    <div class="row-1">
+                <div className="row">
+                <div class="col-md-6">
+                    <div class="row">
                         <h1 className="second-h1" >Paint & Finishes</h1>
                         <div class="line">
                             <label for="Paint"><h6 class="head">Paint</h6></label>
@@ -335,7 +345,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Finish"><h6 class="head">Finish</h6></label>
                             <select class="Selection">
@@ -349,7 +359,7 @@ const BuilderInput = () => {
                             </select>
                         </div>
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Custom Shop Finish"><h6 class="head">Custom Shop Finish</h6></label>
                             <select class="Selection">
@@ -360,10 +370,12 @@ const BuilderInput = () => {
                         </div>
                     </div>
                 </div>
+                </div>
 
 
-                <div class="col-6">
-                    <div class="row-1">
+                <div className="row">
+                <div class="col-md-6">
+                    <div class="row">
                         <h1 className="second-h1" >Hardware</h1>
                         <div class="line">
                             <label for="Tuning-Keys"><h6 class="head">Tuning Keys</h6></label>
@@ -379,7 +391,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Nut"><h6 class="head">Nut</h6></label>
                             <select class="Selection"> 
@@ -393,7 +405,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Bridges"><h6 class="head">Bridges</h6></label>
                             <select class="Selection"> 
@@ -412,7 +424,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Pickups"><h6 class="head">Pickups</h6></label>
                             <select class="Selection">
@@ -437,7 +449,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Potentiometers"><h6 class="head">Potentiometers</h6></label>
                             <select class="Selection"> 
@@ -456,7 +468,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Selector-Switches"><h6 class="head">Selector Switches</h6></label>
                             <select class="Selection"> 
@@ -468,7 +480,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Knobs"><h6 class="head">Knobs</h6></label>
                             <select class="Selection">                                 
@@ -482,7 +494,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Output-Jacks"><h6 class="head">Output Jacks</h6></label>
                             <select class="Selection"> 
@@ -493,7 +505,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Strap-Pins"><h6 class="head">Strap Pins</h6></label>
                             <select class="Selection"> 
@@ -504,7 +516,7 @@ const BuilderInput = () => {
                         </div>
 
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Pickgaurds"><h6 class="head">Pickgaurds</h6></label>
                             <select class="Selection"> 
@@ -519,11 +531,11 @@ const BuilderInput = () => {
                         </div>
                     </div>
                 </div>
+                </div>
 
-
-
-                <div class="col-6">
-                    <div class="row-1">
+               <div className="row">
+               <div class="col-md-6">
+                    <div class="row">
                     <h1 className="second-h1" >Accessories</h1>
                         <div class="line">
                             <label for="Neck-Construction"><h6 class="head">Neck Construction</h6></label>
@@ -536,7 +548,7 @@ const BuilderInput = () => {
                             </select>
                         </div>                        
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Custom-Gig-Bag"><h6 class="head">Custom Gig Bag</h6></label>
                             <select class="Selection">
@@ -551,7 +563,7 @@ const BuilderInput = () => {
                             </select>
                         </div>                        
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Custom-Case"><h6 class="head">Custom Case</h6></label>
                             <select class="Selection">
@@ -563,7 +575,7 @@ const BuilderInput = () => {
                             </select>
                         </div>                        
                     </div>
-                    <div class="row-1">
+                    <div class="row">
                         <div class="line">
                             <label for="Strap"><h6 class="head">Strap</h6></label>
                             <select class="Selection">
@@ -572,9 +584,55 @@ const BuilderInput = () => {
                         </div>                        
                     </div>
                 </div>
+                
+               </div>
+               <div className="row">
+               <div class="col-md-6">
+                    <div class="row">
+                    <h1 className="second-h1" >Accessories</h1>
+                        <div class="line">
+                            <label for="Neck-Construction"><h6 class="head">Full Name</h6></label>
+                            <input type="text" class="Selection" placeholder="Enter your Full Name"/>
+                                
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                            <label for="Custom-Gig-Bag"><h6 class="head">Phone</h6></label>
+                            <input type="text" class="Selection" placeholder="Enter your Phone Number"/>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                        <label for="Custom-Gig-Bag"><h6 class="head">Email</h6></label>
+                            <input type="text" class="Selection" placeholder="Enter your Email"/>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                        <label for="Custom-Gig-Bag"><h6 class="head">Social ID</h6></label>
+                            <input type="text" class="Selection" placeholder="Enter your Social Id Link"/>
+                        </div>                        
+                    </div>
+                </div>
+                   <div className="col-md-6 d-flex align-items-center" style={{marginTop:'7%', paddingLeft:'10%'}}>
+                
+                    <div>
+                    <label for="Strap"><h6 class="head">Special Note</h6></label>
+                    <textarea className="textarea" name="" id="" cols="50" rows="15"></textarea>
+                    </div>
+                </div>
+               </div>
             </div>
-            
-        </div>
+            <div className="row mt-5">
+                <div className="col-md-12 d-flex justify-content-center">
+                <button className="btn btn-danger Selection" style={{background:'#a3102d', border:'none'}}>Submit</button>
+                
+                </div>
+                <p className="text-center mt-3">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur <br />
+There is no one who loves pain itself, who seeks after it and wants to have it, simply</p>
+            </div>
+        </form>
     );
 };
 

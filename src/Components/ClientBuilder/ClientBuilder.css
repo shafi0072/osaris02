@@ -145,6 +145,18 @@
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
-
+.textarea{
+    
+    
+    
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+   
+  
+    margin-top: 20px;
+}
 
 
