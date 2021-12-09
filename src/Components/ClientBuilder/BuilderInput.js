@@ -1,6 +1,44 @@
-import React from 'react';
+import React,{useState} from 'react';
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
 const BuilderInput = () => {
+    // state out of for body
+    const [bodySegment, setBodySegment] = useState({
+        WoodSelection:"",
+        BodyConstruction:"",
+        BodyShapes:"",
+        BodyCurves:"",
+        BodyCavities:"",
+        BodyConstruction1:"",
+    })
+    // state Body Ended
+
+    // state out for neck
+    const [neck, setNeck] = useState({
+        WoodSelection:"",
+        NeckConstruction:"",
+        Headstocks:"",
+        HeadstockAngles:"",
+        NeckTaping:"",
+        TrussRod:"",
+        NeckAssembly:"",
+    })
+
+    // bodySegment handler function start under here
+    const handleOnChangeBodySegment = (e) => {
+        const newBody = {...bodySegment}
+        newBody[e.target.name] = e.target.value;
+        setBodySegment(newBody)
+        console.log(newBody)
+    }
+    // body segment ended here
+
+    // neck sengment function start under here
+    const handleOnChangeNeckSegment = (e) => {
+        const newNeck = {...neck}
+        newNeck[e.target.name] = e.target.value;
+        setNeck(newNeck)
+        console.log(newNeck)
+    }
     return (
         <form className="BuilderInput">
 
@@ -14,7 +52,7 @@ const BuilderInput = () => {
                         <h1 className="second-h1" >Body</h1>
                         <div class="line">
                             <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="WoodSelection"onChange={handleOnChangeBodySegment}>
                                 <option value="mohogany">Mahogany (Red HardWood) - Heavy</option>
                                 <option value="gmelina">Gmelina (White SoftWood) - Light</option>
                                 <option value="acacia">Acacia (Dark Hardwood) - Medium</option>
@@ -37,7 +75,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Body-Construction"><h6 class="head">Body Construction</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="BodyConstruction"  onChange={handleOnChangeBodySegment}>
                                 <option value="pcs-1">1 pcs Body</option>
                                 <option value="pcs-2">2 pcs Body </option>
                                 <option value="pcs-3">3 pcs Body</option>
@@ -49,7 +87,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Body-Shapes"><h6 class="head">Body Shapes</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="BodyShapes"  onChange={handleOnChangeBodySegment}>
                                 <option value="s-cutway">Single Cutway </option>
                                 <option value="d-cutway">Double Cutway </option>
                                 <option value="telecaster">Telecaster Style</option>
@@ -76,7 +114,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Body-Curves"><h6 class="head">Body Curves</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="BodyCurves"  onChange={handleOnChangeBodySegment}>
                                 <option value="c-armrest">Custom Armrest</option>
                                 <option value="deep">Deep Bellycut</option>
                                 <option value="c-edges">Custom Edges</option>
@@ -88,8 +126,8 @@ const BuilderInput = () => {
                     </div>
                     <div class="row">
                         <div class="line">
-                            <label for="Body-Cavities"><h6 class="head">Body Cavities</h6></label>
-                            <select class="Selection">
+                            <label for="Body-Cavities"><h6 class="head "  >Body Cavities</h6></label>
+                            <select class="Selection" name="BodyCavities" onChange={handleOnChangeBodySegment}>
                                 <option value="pickgaurd">Pickgaurd Cavity</option>
                                 <option value="sami">Semi Floating Bridge Cavity</option>
                                 <option value="f-bridge">Floating Bridge Cavity</option>
@@ -103,7 +141,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Body-Construction"><h6 class="head">Body Construction</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="BodyConstruction1"  onChange={handleOnChangeBodySegment}>
                                 <option value="3mm">1 ply bind (Body) 3mm</option>
                                 <option value="6mm">3 ply bind (Body) 6mm</option>
                                 <option value="10mm">5 ply bind (Body) 10mm</option>
@@ -124,7 +162,7 @@ const BuilderInput = () => {
                         <h1 className="second-h1" >Neck</h1>
                         <div class="line">
                             <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="WoodSelection" onChange={handleOnChangeNeckSegment}>
                                 <option value="mahogany">Mahogany (Red HardWood) - Medium</option>
                                 <option value="acacia">Acacia (Dark Hardwood) - Medium</option>
                                 <option value="garjan">Garjan (Red Hardwood) - Light</option>
@@ -137,7 +175,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Neck-Construction"><h6 class="head">Neck Construction</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="NeckConstruction" onChange={handleOnChangeNeckSegment}>
                                 <option value="1pcs">1 pcs Neck</option>
                                 <option value="3ply">3 ply Neck</option>
                                 <option value="5ply">5 ply Body</option>
@@ -148,7 +186,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Headstocks"><h6 class="head">Headstocks</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="Headstocks" onChange={handleOnChangeNeckSegment}>
                                 <option value="tele">Single Row (Tele/Strat Style)</option>
                                 <option value="pointed">Single Row (Pointed)</option>
                                 <option value="prs">Dual Row (LP/PRS Style)</option>
@@ -161,7 +199,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Headstock-Angles"><h6 class="head">Headstock Angles</h6></label>
-                                <select class="Selection">
+                                <select class="Selection" name="HeadstockAngles" onChange={handleOnChangeNeckSegment}>
                                     <option value="straight">Straight</option>
                                     <option value="6d">6 Degree</option>
                                     <option value="12d">12 Degree</option>                                   
@@ -171,7 +209,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Neck-Taping"><h6 class="head">Neck Taping</h6></label>
-                                <select class="Selection">
+                                <select class="Selection" name="NeckTaping" onChange={handleOnChangeNeckSegment}>
                                     <option value="slim">Slim Taped (C)</option>
                                     <option value="ragular-c">Regular Taped (C)</option>
                                     <option value="slim">Extra Slim (D)</option>
@@ -184,7 +222,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Truss-Rod"><h6 class="head">Truss Rod</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="TrussRod" onChange={handleOnChangeNeckSegment}>
                                 <option value="standard">Standard Truss Rod</option>
                                 <option value="adjustment">Adjustment on Hill</option>
                                 <option value="dual">Dual 3mm Reinforcement</option>
@@ -197,7 +235,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Neck-Assembly"><h6 class="head">Neck Assembly</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="NeckAssembly" onChange={handleOnChangeNeckSegment}>
                                 <option value="bolt">Bolt-On Construction</option>
                                 <option value="dovetail">Dovetail Joint Construction</option>
                                 <option value="sami">Semi-though Body Construction</option>
