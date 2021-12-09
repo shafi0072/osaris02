@@ -22,6 +22,44 @@ const BuilderInput = () => {
         TrussRod:"",
         NeckAssembly:"",
     })
+    // state end for neck
+
+    // state for freat board under here
+    const [freatBoard, setFreatBoard] = useState({
+        WoodSelection:"",
+        ScaleLenths:"",
+        FretNumbers:"",
+        FretboardRadius:"",
+        Inlays:"",
+        InlayMaterial:"",
+        BodyNeckBinding:"",
+        Fretwires:""
+    })
+    // state for freat board end here
+
+    // state for pain under here
+    const [paint, setPaint] = useState({
+        Paint:"",
+        Finish:"",
+        CustomShopFinish:"",
+
+    })
+    // state for paint end here
+
+    // state for hardware under here
+    const [hardWare, setHardware] = useState({
+        TuningKeys:"",
+        Nut:"",
+        Bridges:"",
+        Pickups:"",
+        Potentiometers:"",
+        SelectorSwitches:"",
+        Knobs:"",
+        OutputJacks:"",
+        StrapPins:"",
+        Pickgaurds:""
+    })
+
 
     // bodySegment handler function start under here
     const handleOnChangeBodySegment = (e) => {
@@ -39,6 +77,35 @@ const BuilderInput = () => {
         setNeck(newNeck)
         console.log(newNeck)
     }
+
+    // handler function for freatBoard reporting start under here
+    const handleFreatBoardOnChange = (e) => {
+        const newNeck = {...freatBoard}
+        newNeck[e.target.name] = e.target.value;
+        setFreatBoard(newNeck)
+        console.log(newNeck)
+    }
+    // handler function for freateBoard reporting End Here
+
+    // handler funtion for paint start here
+    const handlerOnChangePaint = (e) => {
+        const newNeck = {...paint}
+        newNeck[e.target.name] = e.target.value;
+        setPaint(newNeck)
+        console.log(newNeck)
+    }
+    // handler function for paint end here
+
+
+    // handler function for hardware start here
+    const handleHardwareOnChange = (e) => {
+        const newNeck = {...hardWare}
+        newNeck[e.target.name] = e.target.value;
+        setHardware(newNeck)
+        console.log(newNeck)
+    }
+    // handler function for hardware end here
+
     return (
         <form className="BuilderInput">
 
@@ -254,7 +321,7 @@ const BuilderInput = () => {
                         <h1 className="second-h1" >Fret Board</h1>
                         <div class="line">
                             <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="WoodSelection" onChange={handleFreatBoardOnChange}>
                                 <option value="buck">Buck Maple - White</option>
                                 <option value="acacia">Acacia - Light Brown</option>
                                 <option value="siris">Siris - White/Dark Mixed Grain</option>
@@ -266,7 +333,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Scale-Lenths"><h6 class="head">Scale Lenths<p>(Guitars & Basses)</p></h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="ScaleLenths" onChange={handleFreatBoardOnChange}>
                                 <option value="22">22</option>
                                 <option value="22.5">22.5</option>
                                 <option value="22.75">22.75</option>
@@ -290,7 +357,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Fret-Numbers"><h6 class="head">Fret Numbers</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="FretNumbers" onChange={handleFreatBoardOnChange}>
                                 <option value="20">20</option>
                                 <option value="22">22</option>
                                 <option value="24">24</option>
@@ -302,7 +369,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Fretboard-Radius"><h6 class="head">Fretboard Radius</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="FretboardRadius" onChange={handleFreatBoardOnChange}>
                                 <option value="7.25">7.25''</option>
                                 <option value="9.50">9.50''</option>
                                 <option value="10.50">10.50''</option>
@@ -318,7 +385,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Inlays"><h6 class="head">Inlays</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="Inlays" onChange={handleFreatBoardOnChange}>
                                 <option value="inlaya">No Inlays</option>
                                 <option value="d-inlays">Dot Inlays </option>
                                 <option value="f-inlays">12th Fret Inlays</option>
@@ -330,7 +397,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Inlay-Material"><h6 class="head">Inlay Material</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="InlayMaterial" onChange={handleFreatBoardOnChange}>
                                 <option value="mother">Mother of Pearl</option>
                                 <option value="tortoise">Tortoise Shell</option>
                                 <option value="Steel">Steel</option>
@@ -342,7 +409,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Body+Neck Binding"><h6 class="head">Body+Neck Binding</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="BodyNeckBinding" onChange={handleFreatBoardOnChange}>
                                 <option value="3mm">1 ply bind (Neck) 3 mm</option>
                                 <option value="6mm">3 ply bind (Neck) 6mm</option>
                                 <option value="custom">Custom Material Binding</option>
@@ -352,7 +419,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Fretwires"><h6 class="head">Fretwires</h6></label>
-                            <select class="Selection">                              
+                            <select class="Selection" name="Fretwires"  onChange={handleFreatBoardOnChange}>                              
                                 <option value="regular">Regular .7</option>
                                 <option value="jumbo-9">Jumbo .9</option>
                                 <option value="jumbo-11">Extra Jumbo .11</option>
@@ -370,7 +437,7 @@ const BuilderInput = () => {
                         <h1 className="second-h1" >Paint & Finishes</h1>
                         <div class="line">
                             <label for="Paint"><h6 class="head">Paint</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="Paint" onChange={handlerOnChangePaint}>
                                 <option value="solid">Solid Color</option>
                                 <option value="through">See through Color</option>
                                 <option value="natural">Natural Wood</option>
@@ -386,7 +453,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Finish"><h6 class="head">Finish</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="Finish" onChange={handlerOnChangePaint}>
                                 <option value="semi-gloss">Semi-Gloss Hard Lacquer Finish</option>
                                 <option value="hi-gloss">Super Hi-Gloss Lacquer Finish</option>
                                 <option value="satin">Satin Lacquer Finsish</option>
@@ -400,7 +467,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Custom Shop Finish"><h6 class="head">Custom Shop Finish</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="CustomShopFinish" onChange={handlerOnChangePaint}>
                                 <option value="artworks">Artworks/ Paintings</option>
                                 <option value="artist">Artist Inspired</option>
                                 <option value="extreme">Extreme Finishes</option>
@@ -417,7 +484,7 @@ const BuilderInput = () => {
                         <h1 className="second-h1" >Hardware</h1>
                         <div class="line">
                             <label for="Tuning-Keys"><h6 class="head">Tuning Keys</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="TuningKeys" onChange={handleHardwareOnChange}> 
                                 <option value="fender">6 string Fender Style</option>
                                 <option value="gibson">6 string Gibson Style</option>
                                 <option value="6-mordern">6 String Mordern Style</option>
@@ -432,7 +499,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Nut"><h6 class="head">Nut</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="Nut" onChange={handleHardwareOnChange}> 
                                 <option value="bone">Bone Nut</option>
                                 <option value="bronze">Bronze Nut</option>
                                 <option value="graphite">Graphite Nut</option>
@@ -446,7 +513,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Bridges"><h6 class="head">Bridges</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="Bridges" onChange={handleHardwareOnChange}> 
                                 <option value="tune">Tune O Matic (LP Style)</option>
                                 <option value="wraparound">Wraparound (PRS Style)</option>
                                 <option value="hardtail">Hardtail (Hipshot Style)</option>
@@ -465,7 +532,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Pickups"><h6 class="head">Pickups</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="Pickups" onChange={handleHardwareOnChange}>
                                 <option value="coil">Single Coil</option>
                                 <option value="humbucker">Single Humbucker</option>
                                 <option value="hh-setup">HH Setup</option>
@@ -490,7 +557,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Potentiometers"><h6 class="head">Potentiometers</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="Potentiometers" onChange={handleHardwareOnChange}> 
                                 <option value="250k">250k (Regular)</option>
                                 <option value="500k">500k (Regular)</option>
                                 <option value="cts-250k">CTS 250k</option>
@@ -509,7 +576,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Selector-Switches"><h6 class="head">Selector Switches</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="SelectorSwitches" onChange={handleHardwareOnChange}> 
                                 <option value="3-toggle">3 way Toggle</option>
                                 <option value="3-linear">3 way Linear</option>
                                 <option value="5-linear">5 way Linear</option>
@@ -521,7 +588,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Knobs"><h6 class="head">Knobs</h6></label>
-                            <select class="Selection">                                 
+                            <select class="Selection" name="Knobs" onChange={handleHardwareOnChange}>                                 
                                 <option value="metal">Metal Knobs</option>
                                 <option value="clear">LP Style Clear Hat</option>
                                 <option value="fender">Fender Style Hat</option>
@@ -535,7 +602,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Output-Jacks"><h6 class="head">Output Jacks</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="OutputJacks" onChange={handleHardwareOnChange}> 
                                 <option value="square">Square Plated (Regular)</option>
                                 <option value="endpin">Endpin/ Cylindic</option>
                                 <option value="mounted">Top Mounted</option>
@@ -546,7 +613,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Strap-Pins"><h6 class="head">Strap Pins</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="StrapPins" onChange={handleHardwareOnChange}> 
                                 <option value="regular">Regular Pins</option>
                                 <option value="locking">Locking Pins</option>
                                 <option value="custom">Custom/Branded Pins</option>
@@ -557,7 +624,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Pickgaurds"><h6 class="head">Pickgaurds</h6></label>
-                            <select class="Selection"> 
+                            <select class="Selection" name="Pickgaurds" onChange={handleHardwareOnChange}> 
                                 <option value="materialyrn">Custom Material</option>
                                 <option value="shape">Custom Shape</option>
                                 <option value="finish">Custom Finish</option>
