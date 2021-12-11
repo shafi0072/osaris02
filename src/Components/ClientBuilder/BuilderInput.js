@@ -14,7 +14,7 @@ const BuilderInput = () => {
 
     // state out for neck
     const [neck, setNeck] = useState({
-        WoodSelection:"",
+        NeckWoodSelection:"",
         NeckConstruction:"",
         Headstocks:"",
         HeadstockAngles:"",
@@ -26,7 +26,7 @@ const BuilderInput = () => {
 
     // state for freat board under here
     const [freatBoard, setFreatBoard] = useState({
-        WoodSelection:"",
+        FretWoodSelection:"",
         ScaleLenths:"",
         FretNumbers:"",
         FretboardRadius:"",
@@ -66,6 +66,7 @@ const BuilderInput = () => {
         CustomGigBag:"",
         CustomCase:"",
         Strap:"",
+        picks:""
     });
     // state for Accessories end here
 
@@ -140,10 +141,73 @@ const BuilderInput = () => {
         setContract(contractInfo);
         console.log(contractInfo);
     }
-    
+    const handleOnSubmit = (e) => {
+        const formData = new FormData()
+        formData.append('WoodSelection', bodySegment.WoodSelection);
+        formData.append('BodyConstruction', bodySegment.BodyConstruction);
+        formData.append('BodyShapes', bodySegment.BodyShapes);
+        formData.append('BodyCurves', bodySegment.BodyCurves);
+        formData.append('BodyCavities', bodySegment.BodyCavities);
+        formData.append('BodyBinding', bodySegment.BodyBinding);
+        formData.append('NeckWoodSelection', neck.NeckWoodSelection);
+        formData.append('NeckConstruction', neck.NeckConstruction);
+        formData.append('Headstocks', neck.Headstocks);
+        formData.append('HeadstockAngles', neck.HeadstockAngles);
+        formData.append('NeckTaping', neck.NeckTaping);
+        formData.append('TrussRod', neck.TrussRod);
+        formData.append('NeckAssembly', neck.NeckAssembly);
+
+
+        formData.append('FretWoodSelection', freatBoard.FretWoodSelection);
+        formData.append('ScaleLenths', freatBoard.ScaleLenths);
+        formData.append('FretNumbers', freatBoard.FretNumbers);
+        formData.append('FretboardRadius', freatBoard.FretboardRadius);
+        formData.append('Inlays', freatBoard.Inlays);
+        formData.append('InlayMaterial', freatBoard.InlayMaterial);
+        formData.append('BodyNeckBinding', freatBoard.BodyNeckBinding);
+        formData.append('Fretwires', freatBoard.Fretwires);
+
+        formData.append('Paint', paint.Paint);
+        formData.append('Finish', paint.Finish);
+        formData.append('CustomShopFinish', paint.CustomShopFinish);
+
+        formData.append('TuningKeys', hardWare.TuningKeys);
+        formData.append('Nut', hardWare.Nut);
+        formData.append('Bridges', hardWare.Bridges);
+        formData.append('Pickups', hardWare.Pickups);
+        formData.append('Potentiometers', hardWare.Potentiometers);
+        formData.append('SelectorSwitches', hardWare.SelectorSwitches);
+        formData.append('Knobs', hardWare.Knobs);
+        formData.append('OutputJacks', hardWare.OutputJacks);
+        formData.append('StrapPins', hardWare.StrapPins);
+        formData.append('Pickgaurds', hardWare.Pickgaurds);
+        formData.append('CustomGigBag', Accessories.CustomGigBag);
+        formData.append('CustomCase', Accessories.CustomCase);
+        formData.append('Strap', Accessories.Strap);
+        formData.append('picks', Accessories.picks);
+        formData.append('fullName', contract.fullName);
+        formData.append('Phone', contract.Phone);
+        formData.append('email', contract.email);
+        formData.append('socialId', contract.socialId);
+        formData.append('SpecialNote', contract.SpecialNote);
+
+        fetch('http://localhost:5000/builder/', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+         .then(data => {
+            console.log(data)
+         })
+         .catch(error => {
+            console.error(error)
+         })
+
+        e.preventDefault() 
+    }
 
     return (
-        <form className="BuilderInput">
+        <form className="BuilderInput" onSubmit={handleOnSubmit}>
 
             <h1 className="first-h1">Let's Start</h1>
             <p className="first-p"> Choose Your Guitar Parts</p>
@@ -267,8 +331,8 @@ const BuilderInput = () => {
                     <div class="row">
                         <h1 className="second-h1" >Neck</h1>
                         <div class="line">
-                            <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
-                            <select class="Selection" name="WoodSelection" onChange={handleOnChangeNeckSegment}>
+                            <label for="Wood-Selection"><h6 class="head">Neck Wood Selection</h6></label>
+                            <select class="Selection" name="NeckWoodSelection" onChange={handleOnChangeNeckSegment}>
                                 <option value="mahogany">Mahogany (Red HardWood) - Medium</option>
                                 <option value="acacia">Acacia (Dark Hardwood) - Medium</option>
                                 <option value="garjan">Garjan (Red Hardwood) - Light</option>
@@ -359,8 +423,8 @@ const BuilderInput = () => {
                     <div class="row">
                         <h1 className="second-h1" >Fret Board</h1>
                         <div class="line">
-                            <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
-                            <select class="Selection" name="WoodSelection" onChange={handleFreatBoardOnChange}>
+                            <label for="Wood-Selection"><h6 class="head">Fret Wood Selection</h6></label>
+                            <select class="Selection" name="FretWoodSelection" onChange={handleFreatBoardOnChange}>
                                 <option value="buck">Buck Maple - White</option>
                                 <option value="acacia">Acacia - Light Brown</option>
                                 <option value="siris">Siris - White/Dark Mixed Grain</option>
@@ -761,7 +825,7 @@ const BuilderInput = () => {
             </div>
             <div className="row mt-5">
                 <div className="col-md-12 d-flex justify-content-center">
-                <button className="btn btn-danger Selection" style={{background:'#a3102d', border:'none'}}>Submit</button>
+                <button className="btn btn-danger Selection" style={{background:'#a3102d', border:'none'}} type='submit'>Submit</button>
                 
                 </div>
                 <p className="text-center mt-3">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur <br />
