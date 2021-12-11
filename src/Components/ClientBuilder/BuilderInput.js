@@ -8,7 +8,7 @@ const BuilderInput = () => {
         BodyShapes:"",
         BodyCurves:"",
         BodyCavities:"",
-        BodyConstruction1:"",
+        BodyBinding:"",
     })
     // state Body Ended
 
@@ -58,8 +58,26 @@ const BuilderInput = () => {
         OutputJacks:"",
         StrapPins:"",
         Pickgaurds:""
-    })
+    });
+    // state for hardware end here
 
+    // state for Accessories under here
+    const [Accessories, setAccessories] = useState({
+        CustomGigBag:"",
+        CustomCase:"",
+        Strap:"",
+    });
+    // state for Accessories end here
+
+    // state for contract under here
+    const [contract, setContract] = useState({
+        fullName:"",
+        Phone:"",
+        email:"",
+        socialId:"",
+        SpecialNote:""
+    });
+    // state for contract end here
 
     // bodySegment handler function start under here
     const handleOnChangeBodySegment = (e) => {
@@ -105,6 +123,24 @@ const BuilderInput = () => {
         console.log(newNeck)
     }
     // handler function for hardware end here
+
+    // handler function for Accessories start here
+    const handleOnchangeAccessories = (e) => {
+        const newNeck = {...Accessories}
+        newNeck[e.target.name] = e.target.value;
+        setAccessories(newNeck)
+        console.log(newNeck)
+    };
+    // handler function for Accessories end here
+
+    // handler function for Contract info
+    const handlerContractOnChange = (e) => {
+        const contractInfo = {...contract};
+        contractInfo[e.target.name] = e.target.value;
+        setContract(contractInfo);
+        console.log(contractInfo);
+    }
+    
 
     return (
         <form className="BuilderInput">
@@ -196,7 +232,7 @@ const BuilderInput = () => {
                             <label for="Body-Cavities"><h6 class="head "  >Body Cavities</h6></label>
                             <select class="Selection" name="BodyCavities" onChange={handleOnChangeBodySegment}>
                                 <option value="pickgaurd">Pickgaurd Cavity</option>
-                                <option value="sami">Semi Floating Bridge Cavity</option>
+                                <option value="SemiFloatingBridgeCavity">Semi Floating Bridge Cavity</option>
                                 <option value="f-bridge">Floating Bridge Cavity</option>
                                 <option value="single-coil">Pickup Cavities - SingleCoil</option>
                                 <option value="humbucker">Pickup Cavities - Humbucker</option>
@@ -208,15 +244,18 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Body-Construction"><h6 class="head">Body Construction</h6></label>
-                            <select class="Selection" name="BodyConstruction1"  onChange={handleOnChangeBodySegment}>
+                            <select class="Selection" name="BodyBinding"  onChange={handleOnChangeBodySegment}>
                                 <option value="3mm">1 ply bind (Body) 3mm</option>
                                 <option value="6mm">3 ply bind (Body) 6mm</option>
                                 <option value="10mm">5 ply bind (Body) 10mm</option>
                                 <option value="custom">Custom Material Binding</option>                                    
                             </select>
                         </div>
-                    </div>        
+                    </div> 
+                         
                 </div>
+                
+                
                 <div className="col-md-6">
 
                 </div>
@@ -642,21 +681,12 @@ const BuilderInput = () => {
                <div class="col-md-6">
                     <div class="row">
                     <h1 className="second-h1" >Accessories</h1>
-                        <div class="line">
-                            <label for="Neck-Construction"><h6 class="head">Neck Construction</h6></label>
-                            <select class="Selection">
-                                <option value="fabric">Fabric</option>
-                                <option value="leather">Leather</option>
-                                <option value="artificial">Artificial Leather</option>
-                                <option value="padding-.5">Padding .5''</option>
-                                <option value="padding-1">Padding 1''</option>
-                            </select>
-                        </div>                        
+                                              
                     </div>
                     <div class="row">
                         <div class="line">
                             <label for="Custom-Gig-Bag"><h6 class="head">Custom Gig Bag</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="CustomGigBag" onChange={handleOnchangeAccessories}>
                                 <option value="artifical">Wrapping Material Artifical Leather</option>
                                 <option value="leather">Wrapping Material Leather</option>
                                 <option value="blanket">Regular Padding Blanket</option>
@@ -671,7 +701,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Custom-Case"><h6 class="head">Custom Case</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="CustomCase" onChange={handleOnchangeAccessories}>
                                 <option value="classic">Classic Custom Ingraved Leather Strap</option>
                                 <option value="mordern">Mordern Custom Ingraved Leather Strap</option>
                                 <option value="artificial">Artificial Leather</option>
@@ -683,7 +713,7 @@ const BuilderInput = () => {
                     <div class="row">
                         <div class="line">
                             <label for="Strap"><h6 class="head">Strap</h6></label>
-                            <select class="Selection">
+                            <select class="Selection" name="Strap" onChange={handleOnchangeAccessories}>
                                 <option value="custom">Custom Signatured Wooden Picks</option>                                
                             </select>
                         </div>                        
@@ -694,29 +724,29 @@ const BuilderInput = () => {
                <div className="row">
                <div class="col-md-6">
                     <div class="row">
-                    <h1 className="second-h1" >Accessories</h1>
+                    <h1 className="second-h1" >Contract Information</h1>
                         <div class="line">
                             <label for="Neck-Construction"><h6 class="head">Full Name</h6></label>
-                            <input type="text" class="Selection" placeholder="Enter your Full Name"/>
+                            <input type="text" class="Selection" placeholder="Enter your Full Name" name="fullName" onChange={handlerContractOnChange}/>
                                 
                         </div>                        
                     </div>
                     <div class="row">
                         <div class="line">
                             <label for="Custom-Gig-Bag"><h6 class="head">Phone</h6></label>
-                            <input type="text" class="Selection" placeholder="Enter your Phone Number"/>
+                            <input type="text" class="Selection" placeholder="Enter your Phone Number" name="Phone" onChange={handlerContractOnChange}/>
                         </div>                        
                     </div>
                     <div class="row">
                         <div class="line">
                         <label for="Custom-Gig-Bag"><h6 class="head">Email</h6></label>
-                            <input type="text" class="Selection" placeholder="Enter your Email"/>
+                            <input type="text" class="Selection" placeholder="Enter your Email" name="email" onChange={handlerContractOnChange}/>
                         </div>                        
                     </div>
                     <div class="row">
                         <div class="line">
                         <label for="Custom-Gig-Bag"><h6 class="head">Social ID</h6></label>
-                            <input type="text" class="Selection" placeholder="Enter your Social Id Link"/>
+                            <input type="text" class="Selection" placeholder="Enter your Social Id Link" name="socialId" onChange={handlerContractOnChange}/>
                         </div>                        
                     </div>
                 </div>
@@ -724,7 +754,7 @@ const BuilderInput = () => {
                 
                     <div>
                     <label for="Strap"><h6 class="head">Special Note</h6></label>
-                    <textarea className="textarea" name="" id="" cols="50" rows="15"></textarea>
+                    <textarea className="textarea"  id="" cols="50" rows="15" name="SpecialNote" onChange={handlerContractOnChange}></textarea>
                     </div>
                 </div>
                </div>
