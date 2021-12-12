@@ -209,7 +209,7 @@ const BuilderInput = () => {
     return (
         <form className="BuilderInput" onSubmit={handleOnSubmit}>
 
-            <h1 className="first-h1">Let's Start</h1>
+<h1 className="first-h1">Let's Start</h1>
             <p className="first-p"> Choose Your Guitar Parts</p>
 
             <div class="container">
@@ -307,7 +307,7 @@ const BuilderInput = () => {
                     </div>
                     <div class="row">
                         <div class="line">
-                            <label for="Body-Construction"><h6 class="head">Body Construction</h6></label>
+                            <label for="Body-Binding"><h6 class="head">Body Construction</h6></label>
                             <select class="Selection" name="BodyBinding"  onChange={handleOnChangeBodySegment}>
                                 <option value="3mm">1 ply bind (Body) 3mm</option>
                                 <option value="6mm">3 ply bind (Body) 6mm</option>
@@ -331,8 +331,8 @@ const BuilderInput = () => {
                     <div class="row">
                         <h1 className="second-h1" >Neck</h1>
                         <div class="line">
-                            <label for="Wood-Selection"><h6 class="head">Neck Wood Selection</h6></label>
-                            <select class="Selection" name="NeckWoodSelection" onChange={handleOnChangeNeckSegment}>
+                            <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
+                            <select class="Selection" name="WoodSelection" onChange={handleOnChangeNeckSegment}>
                                 <option value="mahogany">Mahogany (Red HardWood) - Medium</option>
                                 <option value="acacia">Acacia (Dark Hardwood) - Medium</option>
                                 <option value="garjan">Garjan (Red Hardwood) - Light</option>
@@ -423,8 +423,8 @@ const BuilderInput = () => {
                     <div class="row">
                         <h1 className="second-h1" >Fret Board</h1>
                         <div class="line">
-                            <label for="Wood-Selection"><h6 class="head">Fret Wood Selection</h6></label>
-                            <select class="Selection" name="FretWoodSelection" onChange={handleFreatBoardOnChange}>
+                            <label for="Wood-Selection"><h6 class="head">Wood Selection</h6></label>
+                            <select class="Selection" name="WoodSelection" onChange={handleFreatBoardOnChange}>
                                 <option value="buck">Buck Maple - White</option>
                                 <option value="acacia">Acacia - Light Brown</option>
                                 <option value="siris">Siris - White/Dark Mixed Grain</option>
@@ -751,14 +751,17 @@ const BuilderInput = () => {
                         <div class="line">
                             <label for="Custom-Gig-Bag"><h6 class="head">Custom Gig Bag</h6></label>
                             <select class="Selection" name="CustomGigBag" onChange={handleOnchangeAccessories}>
-                                <option value="artifical">Wrapping Material Artifical Leather</option>
-                                <option value="leather">Wrapping Material Leather</option>
-                                <option value="blanket">Regular Padding Blanket</option>
-                                <option value="soft-padding">Special Soft Fur Padding</option>
-                                <option value="regular-hardware">Regular Hardware</option>
-                                <option value="durable-hardware">Extra Durable Hardware</option>
-                                <option value="custom-color">Custom Color</option>
-                                <option value="custom-design">Custom Design/Initial/Branding</option> 
+                               
+                               <option value="fabric">Fabric</option>
+                               <option value="leather"> Leather</option>
+                               <option value="artificial">Artificial Leather</option>
+                               <option value="padding 5 inch"> Padding 5 inch</option>
+                               <option value="padding 1 inch"> Padding 1 inch</option>
+                               
+                                
+                            
+                                
+                               
                             </select>
                         </div>                        
                     </div>
@@ -766,19 +769,51 @@ const BuilderInput = () => {
                         <div class="line">
                             <label for="Custom-Case"><h6 class="head">Custom Case</h6></label>
                             <select class="Selection" name="CustomCase" onChange={handleOnchangeAccessories}>
-                                <option value="classic">Classic Custom Ingraved Leather Strap</option>
-                                <option value="mordern">Mordern Custom Ingraved Leather Strap</option>
-                                <option value="artificial">Artificial Leather</option>
-                                <option value="printed">Printed/Ingraved Custom Nylon strap</option>
-                                <option value="custom">Custom Materials/ Color</option>                                                               
+
+                            <option value="artifical">Wrapping Material Artifical Leather</option>
+                            <option value="leather">Wrapping Material Leather</option>
+                            <option value="blanket">Regular Padding Blanket</option>
+                            <option value="soft-padding">Special Soft Fur Padding</option>
+                            <option value="regular-hardware">Regular Hardware</option>
+                            <option value="durable-hardware">Extra Durable Hardware</option>
+                            <option value="custom-color">Custom Color</option>
+                                <option value="custom-design">Custom Design/Initial/Branding</option> 
+
+
+
+                                
+                                
+            
+                                
+
+                                                                                            
                             </select>
                         </div>                        
                     </div>
                     <div class="row">
                         <div class="line">
                             <label for="Strap"><h6 class="head">Strap</h6></label>
+
+                            
                             <select class="Selection" name="Strap" onChange={handleOnchangeAccessories}>
-                                <option value="custom">Custom Signatured Wooden Picks</option>                                
+                            <option value="classic">Classic Custom Ingraved Leather Strap</option>
+                                <option value="mordern">Mordern Custom Ingraved Leather Strap</option>
+                                <option value="printed">Printed/Ingraved Custom Nylon strap</option>
+                                <option value="custom">Custom Materials/ Color</option>   
+                                 
+
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                            <label for="Strap"><h6 class="head">Picks</h6></label>
+
+                            
+                            <select class="Selection" name="Picks" onChange={handleOnchangeAccessories}>
+                            <option value="custom">Custom Signatured Wooden Picks</option> 
+
+
                             </select>
                         </div>                        
                     </div>
