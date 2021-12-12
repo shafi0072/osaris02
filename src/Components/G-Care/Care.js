@@ -4,116 +4,80 @@ import Contact from '../Home/Contract/Contract';
 import Footer from '../Home/Footer/Footer';
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import Banner from '../../Resorce/Img/Img1.jpg';
-import Img from '../../Resorce/Img/guitar-756326__480.jpg';
+import Banner from '../../Resorce/web cover 4.jpg';
 import './Care.css';
 import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 
 const Care = () => {
     return (
-        <div className="care-container">
+        <div className='gCare-container'>
             <Navbar/>
-            <div className="care-items-container text-white py-5">
-                <div className="care-about py-3">
-                    <h1>About</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus tellus lorem, a auctor dui rutrum eget. Nulla facilisi. Vivamus consequat neque at nisl facilisis convallis. Sed ut imperdiet massa. Aenean a aliquam justo. Vivamus blandit ipsum non risus dignissim iaculis. Donec posuere vehicula nunc vel lacinia</p>
+            <img className='care-banner' src={Banner}/>
+            <div className='service-title-bg'>
+                <div className='service-title d-flex justify-content-between align-items-center'>
+                    <StarIcon/>
+                    <StarIcon className='big-star'/>
+                    <h1>QUALITY SERVICE GUARANTEED</h1>
+                    <StarIcon className='big-star'/>
+                    <StarIcon/>
                 </div>
-                <div className="video-container my-5">
-                    <iframe className="care-video"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
-                </div>
-                <div className="py-4">
-                    <h1 className="text-center">Our Services</h1>
-                    <div className="row care-service-container py-3">
-                        <div className="col-md-4">
-                            <div className="service-item">
-                                <p><AddBusinessIcon  className="service-icon"/></p>
-                                <h4 className="py-2 service-h4">REPEARING</h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus tellus lorem, a auctor dui rutrum eget. Nulla facilisi. Vivamus consequat neque at nisl facilisis convallis. </p>
-                            </div>
+            </div>
+            <div className='service-text'>
+                <p>GuitarCare Bangladesh works with stringed instruments in need of attention at our in-house repair and restoration facility. Offering a staff of highly skilled and experienced luthiers in our state-of-the-art climate-controlled environment, We are fully-equipped to perform any operations required in all phases of repair and restoration.</p>
+                <ul>
+                    <li className='gCare-list'>Pro Set Up Acoustic or ElectricX</li>
+                    <li className='gCare-list'>Fret Work Fret dress to Plane & RefretX</li>
+                    <li className='gCare-list'>Structural Repairs Body cracks, broken headstocks, Etc.X</li>
+                    <li className='gCare-list'>Neck ResetsX</li>
+                    <li className='gCare-list'>Custom PaintX</li>
+                    <li className='gCare-list'>Total Restorations</li>
+                </ul>
+                <p>If you have a repair issue, schedule a consultation, and GuitarCare Bangladesh will assist with honest, clear-cut solutions.</p>
+                <p>We evaluate each situation individually and offer reliable time and cost estimates to address your instrument's needs. After repair authorization is issued and your instrument is received, we make a more formal evaluation and give you a detailed quote. No work begins until you approve all costs. When the work is complete, we contact you for payment and make arrangements to put the instrument back in your hands. It s that simple, so please schedule a consultation today. Email and phone contact options are also available.</p>
+            </div>
+            <div className='Gcare-button bg-danger mb-5'>
+                <button className='Gcare-button-text'>Learn More</button>
+            </div>
+            <div className='service-sector py-4'>
+                <div className='row mb-4'>
+                    <div className='col-md-4'>
+                        <div className='service-sector-bg service-bg1 d-flex justify-content-center align-items-end'>
+                            <h2 className='service-sector-text'>REGULAR MAINTENANCE</h2>
                         </div>
-                        <div className="col-md-4">
-                            <div className="service-item">
-                                <p><AddBusinessIcon  className="service-icon"/></p>
-                                <h4 className="py-2 service-h4">REPEARING</h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus tellus lorem, a auctor dui rutrum eget. Nulla facilisi. Vivamus consequat neque at nisl facilisis convallis. </p>
-                            </div>
+                    </div>
+                    <div className='col-md-4'>
+                        <div className='service-sector-bg service-bg2 d-flex justify-content-center align-items-end'>
+                            <h2 className='service-sector-text'>FRET WORKS</h2>
                         </div>
-                        <div className="col-md-4">
-                            <div className="service-item">
-                                <p><AddBusinessIcon  className="service-icon"/></p>
-                                <h4 className="py-2 service-h4">REPEARING</h4>
-                                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus tellus lorem, a auctor dui rutrum eget. Nulla facilisi. Vivamus consequat neque at nisl facilisis convallis. </p>
-                            </div>
+                    </div>
+                    <div className='col-md-4'>
+                        <div className='service-sector-bg service-bg3 d-flex justify-content-center align-items-end'>
+                            <h2 className='service-sector-text'>STRUCTURAL <br/> REPAIR</h2>
                         </div>
                     </div>
                 </div>
-                <div className="py-3 text-center">
-                        <input className="btn btn-primary gears-sell-button" type="submit" value="Show All"/>
-                </div>
-                <div className="review-container py-4">
-                    <div className="row">
-                        <div className="col-md-3">
-                            <div className="review-items-container">
-                                <img className="review-img" src={Img}/>
-                                <div className="review-text">
-                                    <h3>Raktim Proloy</h3>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarBorderIcon/>
-                                </div>
-                            </div>
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <div className='service-sector-bg service-bg4 d-flex justify-content-center align-items-end'>
+                            <h2 className='service-sector-text'>CUSTOM <br/> PAINT JOB</h2>
                         </div>
-                        <div className="col-md-3">
-                            <div className="review-items-container">
-                                <img className="review-img" src={Img}/>
-                                <div className="review-text">
-                                    <h3>Raktim Proloy</h3>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarBorderIcon/>
-                                </div>
-                            </div>
+                    </div>
+                    <div className='col-md-4'>
+                        <div className='service-sector-bg service-bg5 d-flex justify-content-center align-items-end'>
+                            <h2 className='service-sector-text'>TOTAL <br/> RESTORATION</h2>
                         </div>
-                        <div className="col-md-3">
-                            <div className="review-items-container">
-                                <img className="review-img" src={Img}/>
-                                <div className="review-text">
-                                    <h3>Raktim Proloy</h3>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarBorderIcon/>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="review-items-container">
-                                <img className="review-img" src={Img}/>
-                                <div className="review-text">
-                                    <h3>Raktim Proloy</h3>
-                                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarIcon/>
-                                    <StarBorderIcon/>
-                                </div>
-                            </div>
+                    </div>
+                    <div className='col-md-4'>
+                        <div className='service-sector-bg service-bg6 d-flex justify-content-center align-items-end'>
+                            <h2 className='service-sector-text'>ELECTRONICS & HARDWARE</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <Contact/>
+            <div className='Gcare-button bg-danger mb-5'>
+                <button className='Gcare-button-text'>View All</button>
+            </div>
+            <div className='border'></div>
             <Footer/>
         </div>
     );
