@@ -1,88 +1,89 @@
-.care-container{
-    background-color: #141414;
+.gCare-container{
+    background-color: black;
     box-sizing: border-box;
 }
-.care-about{
+.care-banner{
+    width: 100%;
+    height: 35rem;
+    border-bottom: 10px solid white;
+}
+.service-title-bg{
+    background-color: #e7c350;
+}
+.service-title{
     width: 60%;
     margin: 0 auto;
-    text-align: center;
-}
-.video-container{
-    width: 90%;
-    margin: 0 auto;
-}
-.care-video{
-    width: 100%;
-    height: 600px;
-}
-.care-service-container{
-    width: 90%;
-    margin: 0 auto;
-}
-.service-item{
-    padding: 5%;
-    color: black;
-    box-shadow: 2px 4px 16px 0px rgb(131, 131, 131);
-    text-align: center;
-    background-color: white;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    
-}
-.service-item::before{
-    position: absolute;
-    content: '';
-    top: -70%;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #9615db;
-    z-index: -1;
-    transition: all .4s ease-in-out;
-}
-.service-item:hover.service-item::before{
-    top: -52%;
-}
-.service-icon{
-    font-size: 40px!important;
-    color: white;
-}
-.service-h4{
-    color: black;
-    font-size: 27px;
+    padding:  1% 0;
     font-weight: bold;
-    transition: all .4s ease-in-out;
 }
-.service-item:hover .service-h4{
+.big-star{
+    font-size: 40px!important;
+}
+.service-text{
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 0;
     color: white;
 }
-.gears-sell-button{
-    width: 10%;
-    transition: all .3s ease-in-out;
-    border: none;
+.gCare-list{
+    list-style: inside;
 }
-.gears-sell-button:hover{
-    background-color: #9615db;
-    letter-spacing: .6px;
-}
-.review-container{
-    width: 90%;
+.Gcare-button{
+    width: 20%;
     margin: 0 auto;
     text-align: center;
+    padding: .5% 0;
+    border-radius: 7px;
 }
-.review-items-container{
-    background-color: #2b2b2b;
-    padding: 4% 5%;
+.Gcare-button-text{
+    background-color: transparent;
+    border: none;
+    color: white;
 }
-.review-img{
-    width: 30%;
-    height: 10vh;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    position: relative;
+.service-sector{
+    width: 80%;
+    margin: 0 auto;
 }
 
-.review-text{
+.service-sector-bg{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
+    height: 15rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.service-sector-bg::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: -1;
+}
+.service-bg1{
+    background-image: url(../../Resorce/male-hands-changing-acoustic-guitar-strings.jpg);
+}
+.service-bg2{
+    background-image: url(../../Resorce/strings-1.jpg);
+}
+.service-bg3{
+    background-image: url(../../Resorce/MRUHPYe2Pf6QBf4P.medium);
+}
+.service-bg4{
+    background-image: url(../../Resorce/acoustic-guitar-parts-2.jpg);
+}
+.service-bg5{
+    background-image: url(../../Resorce/162743.image0.jpg);
+}
+.service-bg6{
+    background-image: url(../../Resorce/Building-Better-Parts-1@1400x1050.jpg);
+}
+.service-sector-text{
+    padding-bottom: 3%;
+    color: white;
 }

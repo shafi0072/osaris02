@@ -10,7 +10,7 @@ import bdlogo3 from '../../../Resorce/bdlogo3.png'
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className="pt-3 pb-3 footer-container">
+        <div className=" pb-3 footer-container">
             <div className=" bg-danger">
                 <ul className="d-flex justify-content-between align-item-center footer-items">
                <li className="li-item">FAQ</li>
