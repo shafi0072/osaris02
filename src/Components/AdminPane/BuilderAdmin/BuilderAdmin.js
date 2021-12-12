@@ -30,7 +30,7 @@ const BuilderAdmin = () => {
            </div>
                 
                 {
-                builderOrder.map(data => <BuilderCategoryAdmin data={data}/>)
+                builderOrder.map(data => <BuilderCategoryAdmin key={data._id} data={data}/>)
             }
            
             

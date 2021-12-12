@@ -1,6 +1,7 @@
 import React from 'react';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import './BuilderAdmin.css'
+import { Link } from 'react-router-dom';
 const BuilderCategoryAdmin = (props) => {
     return (
         
@@ -15,7 +16,7 @@ const BuilderCategoryAdmin = (props) => {
                <p className='text-light'>{props.data.email}</p>
                </div>
                <div className="col-md-3">
-                    <ArrowForwardIosIcon className="text-light goOn"/>
+                    <Link to={`/adminPanel/${props.data._id}`}><ArrowForwardIosIcon className="text-light goOn"/></Link>
                </div>
            </div>
     );

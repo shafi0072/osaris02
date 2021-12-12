@@ -20,6 +20,7 @@ import Care from './Components/G-Care/Care';
 import Learn from './Components/Learn/Learn';
 import Login from './Components/Login/Login';
 import Signup from './Components/Login/Signup';
+import BuilderDetailsPage from './Components/AdminPane/BuilderAdmin/BuilderDetailsPage';
 export const userContext = createContext()
 const App = () => {
   const [user, setUser] = useState({
@@ -51,9 +52,10 @@ const App = () => {
           <Route path = '/learn' exact component = {Learn}/>
           <Route path = '/blog' exact component = {Blog}/>
           <Route path = '/guitar/:id' exact component = {GuitarDetails}/>
-          <Route path = '/adminPanel' component={AdminMain}/>
+          <Route path = '/adminPanel' exact component={AdminMain}/>
           <Route path = '/login' component={Login}/>
           <Route path = '/signup' component={Signup}/>
+          <Route path = '/adminPanel/:id' exact component={BuilderDetailsPage}/>
         </Switch>
     </Router>
     </userContext.Provider>
