@@ -32,8 +32,6 @@ const BuilderAdmin = () => {
                 {
                 builderOrder.map(data => <BuilderCategoryAdmin key={data._id} data={data}/>)
             }
-           
-            
         </div>
     );
 };
