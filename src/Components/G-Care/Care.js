@@ -4,7 +4,7 @@ import Contact from '../Home/Contract/Contract';
 import Footer from '../Home/Footer/Footer';
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import Banner from '../../Resorce/web cover 4.jpg';
+import logo from '../../Resorce/guitar-care-logo.png';
 import './Care.css';
 import AddBusinessIcon from '@mui/icons-material/AddBusiness';
 
@@ -12,7 +12,33 @@ const Care = () => {
     return (
         <div className='gCare-container'>
             <Navbar/>
-            <img className='care-banner' src={Banner}/>
+            <div className='schedule-container'>
+                <div className='row'>
+                    <div className='col-md-6'></div>
+                    <div className='col-md-1'></div>
+                    <div className='col-md-5'>
+                        <div className='gcare-schedule p-5 m-5'>
+                            <div className='gcare-logo-container'>
+                                <img className='gcare-logo' src={logo}/>
+                            </div>
+                            <p>From basic setups to full restorations of damaged or neglected vintage instruments, you can trust the craftspeople at BluesDen Guitar Care, Repair & Restoration to provide the expert care and attention your instrument needs.</p>
+                            <ul className='m-0 p-0'>
+                                <li className='gCare-list mb-2'>From setups to complete restorations and rebuilds, we can handle it all</li>
+                                <li className='gCare-list mb-2'>Highly experienced staff</li>
+                                <li className='gCare-list mb-2'>We service acoustic and electric guitars, and more - all brands welcome</li>
+                                <li className='gCare-list mb-2'>Quality service Guaranteed</li>
+                            </ul>
+                            <div className='d-flex justify-content-between align-items-start'>
+                                <input className='gcare-checkbox' type="checkbox"/>
+                                <p>I have read and agree to the <snap className="text-danger">Repair Disclaimer</snap>. I am 18 years or older or have a parent with me.</p>
+                            </div>
+                            <div className='gcare-fitst-button-container'>
+                                <button className='gcare-fitst-button bg-danger py-1'>Schedule a Consultation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='service-title-bg'>
                 <div className='service-title d-flex justify-content-between align-items-center'>
                     <StarIcon/>
@@ -77,7 +103,10 @@ const Care = () => {
             <div className='Gcare-button bg-danger mb-5'>
                 <button className='Gcare-button-text'>View All</button>
             </div>
-            <div className='border'></div>
+            <div className='design-border bg-danger mb-4'></div>
+            <div className='service-youtube mb-4'>
+                <iframe className='youtube-style' width="100%" src="https://www.youtube.com/embed/-dnQtN3Yzso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <Footer/>
         </div>
     );
