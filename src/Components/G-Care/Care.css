@@ -2,6 +2,9 @@
     background-color: black;
     box-sizing: border-box;
 }
+.padding-two-side{
+    padding: 0 8%;
+}
 /*  */
 
 .schedule-container{
@@ -9,17 +12,27 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 10px solid white;
 }
 .gcare-schedule{
     background-color: rgba(26, 26, 26, 0.555);
     color: white;
 }
+.logo-container{
+    position: relative;
+}
 .gcare-logo-container{
-
+    background-color: #1e1919;
+    height: 50px;
+    width: 100%;
 }
 .gcare-logo{
-    width: 15%;
-    height: 15%;
+    width: 23%;
+    height: 200%;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 37%;
 }
 .gcare-checkbox{
     margin-top: 4px;
@@ -38,6 +51,9 @@
 }
 
 /*  */
+.schedule-text{
+    margin-top: 7%;
+}
 .service-title-bg{
     background-color: #e7c350;
 }
@@ -128,6 +144,6 @@
     margin: 0 auto;
 }
 .youtube-style{
-    height: 400px;
+    height: 500px;
     border-bottom: 8px solid #181818;
 }
