@@ -1,3 +1,13 @@
 .goOn{
     cursor: pointer;
 }
+.table-container{
+    color: white;
+    width: 100%;
+}
+.admin-thead{
+    background-color: tomato;
+}
+.admin-thead td{
+    padding-right: 10%;
+}

@@ -14,24 +14,23 @@ const BuilderAdmin = () => {
     }, [])
     return (
         <div className='mt-5'>
-       <div className="row">
-               <div className="col-md-3">
-                   <p className='text-danger'>Name</p>
-               </div>
-               <div className="col-md-3">
-               <p className='text-danger'>Phone</p>
-               </div>
-               <div className="col-md-3">
-               <p className='text-danger'>Email</p>
-               </div>
-               <div className="col-md-3">
-               <p className='text-danger'>Move</p>
-               </div>
-           </div>
+            <div className='table-container'>
+                <table>
+                    <thead>
+                        <tr className='admin-thead'>
+                            <td>Name</td>
+                            <td>Phone</td>
+                            <td>Email</td>
+                            <td>Move On</td>
+                        </tr>
+                    </thead>
+                        <BuilderCategoryAdmin/>
+                </table>
+            </div>
+        
                 
-                {
-                builderOrder.map(data => <BuilderCategoryAdmin key={data._id} data={data}/>)
-            }
+                
+            
            
             
         </div>
