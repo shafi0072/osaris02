@@ -1,3 +1,33 @@
 .goOn{
     cursor: pointer;
 }
+.table-container{
+    color: dark;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+.admin-table{
+    width: 100%;
+}
+.admin-thead{
+    color: white;
+}
+.admin-thead td{
+    padding: 1% 0;
+    width: 10%;
+}
+.admin-tbody td{
+    padding: .5% 0;
+}
+.moveon{
+    text-align: center;
+}
+.admin-icon{
+    color: white;
+    border-radius: 50%;
+    width: 15%!important;
+    height: 17%!important;
+    padding: 1%;
+}

@@ -2,6 +2,10 @@ img{
     width: 100%;
     height: auto;
 }
+.category-container{
+    width: 99%;
+    margin: 0 auto;
+}
 .img1-container{
     
    
@@ -141,5 +145,9 @@ img{
     
 }
 .sr{
+    padding-right: 0;
     margin-bottom: 1rem!important;
+}
+.padding-maintain{
+    padding-right: 0;
 }

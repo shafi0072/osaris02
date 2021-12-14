@@ -17,22 +17,23 @@ const Care = () => {
                     <div className='col-md-6'></div>
                     <div className='col-md-1'></div>
                     <div className='col-md-5'>
-                        <div className='gcare-schedule p-5 m-5'>
-                            <div className='gcare-logo-container'>
+                        <div className='gcare-schedule m-5 pt-2 pb-4'>
+                            <div className='logo-container'>
+                                <div className='gcare-logo-container'></div>
                                 <img className='gcare-logo' src={logo}/>
                             </div>
-                            <p>From basic setups to full restorations of damaged or neglected vintage instruments, you can trust the craftspeople at BluesDen Guitar Care, Repair & Restoration to provide the expert care and attention your instrument needs.</p>
-                            <ul className='m-0 p-0'>
+                            <p className='padding-two-side schedule-text'>From basic setups to full restorations of damaged or neglected vintage instruments, you can trust the craftspeople at BluesDen Guitar Care, Repair & Restoration to provide the expert care and attention your instrument needs.</p>
+                            <ul className='m-0 padding-two-side'>
                                 <li className='gCare-list mb-2'>From setups to complete restorations and rebuilds, we can handle it all</li>
                                 <li className='gCare-list mb-2'>Highly experienced staff</li>
                                 <li className='gCare-list mb-2'>We service acoustic and electric guitars, and more - all brands welcome</li>
                                 <li className='gCare-list mb-2'>Quality service Guaranteed</li>
                             </ul>
-                            <div className='d-flex justify-content-between align-items-start'>
+                            <div className='d-flex justify-content-between align-items-start padding-two-side'>
                                 <input className='gcare-checkbox' type="checkbox"/>
                                 <p>I have read and agree to the <snap className="text-danger">Repair Disclaimer</snap>. I am 18 years or older or have a parent with me.</p>
                             </div>
-                            <div className='gcare-fitst-button-container'>
+                            <div className='gcare-fitst-button-container padding-two-side'>
                                 <button className='gcare-fitst-button bg-danger py-1'>Schedule a Consultation</button>
                             </div>
                         </div>
@@ -105,7 +106,7 @@ const Care = () => {
             </div>
             <div className='design-border bg-danger mb-4'></div>
             <div className='service-youtube mb-4'>
-                <iframe className='youtube-style' width="100%" src="https://www.youtube.com/embed/-dnQtN3Yzso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="youtube-style" width="100%" src="https://www.youtube.com/embed/videoseries?list=PL2vWe8MyLYzlu-LvXQ6jwxhD2M79yj0aL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <Footer/>
         </div>

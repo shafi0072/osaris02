@@ -1,4 +1,6 @@
 .slider-img-containter{
+    width: 98%;
+    margin: 0 auto;
     height: 70vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.253)), url(../../../Resorce/siddharth-pawaskar-2-image-close.jpg);
     background-position: center center;
