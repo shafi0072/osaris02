@@ -15,9 +15,9 @@ const BuilderAdmin = () => {
     return (
         <div className='mt-5'>
             <div className='table-container'>
-                <table>
+                <table className='admin-table'>
                     <thead>
-                        <tr className='admin-thead'>
+                        <tr className='admin-thead bg-danger'>
                             <td>Name</td>
                             <td>Phone</td>
                             <td>Email</td>
