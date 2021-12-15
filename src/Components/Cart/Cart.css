@@ -1,0 +1,32 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.cart-container{
+    width: 70%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    margin-top: 20%;
+}
+.item-count-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.cart-title{
+    border-bottom: 2px solid white;
+    padding: .8% 0;
+    margin-bottom: 3%;
+}
+.item-img{
+    width: 90px;
+    height: 90px;
+}
+.item-count{
+    width: 20%;
+    text-align: center;
+}

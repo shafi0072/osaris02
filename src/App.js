@@ -21,6 +21,7 @@ import Learn from './Components/Learn/Learn';
 import Login from './Components/Login/Login';
 import Signup from './Components/Login/Signup';
 import BuilderDetailsPage from './Components/AdminPane/BuilderAdmin/BuilderDetailsPage';
+import Cart from './Components/Cart/Cart'
 export const userContext = createContext()
 const App = () => {
   const [user, setUser] = useState({
@@ -56,6 +57,7 @@ const App = () => {
           <Route path = '/login' component={Login}/>
           <Route path = '/signup' component={Signup}/>
           <Route path = '/adminPanel/:id' exact component={BuilderDetailsPage}/>
+          <Route path = '/cart' component= {Cart}/>
         </Switch>
     </Router>
     </userContext.Provider>
