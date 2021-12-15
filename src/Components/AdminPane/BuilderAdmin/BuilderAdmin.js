@@ -13,9 +13,9 @@ const BuilderAdmin = () => {
 
     }, [])
     return (
-        <div className='mt-5'>
+        <div className='mt-5 p-5'>
             <div className='table-container'>
-                <table className='admin-table'>
+                <table className='admin-table p-5'>
                     <thead>
                         <tr className='admin-thead bg-danger'>
                             <td>Name</td>
@@ -24,21 +24,9 @@ const BuilderAdmin = () => {
                             <td>Move On</td>
                         </tr>
                     </thead>
-                        <BuilderCategoryAdmin/>
+                        {builderOrder.map(data => <BuilderCategoryAdmin data={data} key={data._id}/>)}
                 </table>
             </div>
-        
-                
-<<<<<<< HEAD
-                {
-                builderOrder.map(data => <BuilderCategoryAdmin key={data._id} data={data}/>)
-            }
-=======
-                
-            
-           
-            
->>>>>>> 7d47ddd21ae9269bcb498f29c7c4252b8d0dbaad
         </div>
     );
 };

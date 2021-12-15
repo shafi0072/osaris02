@@ -43,7 +43,7 @@ const GuitarDetails = () => {
         imageTwo,
         imageThree
     } = signleData
-    console.log(signleData)
+    console.log({youtubeLink})
     return (
         <div className="guitar-details-container">
             <Navbar/>
@@ -52,7 +52,7 @@ const GuitarDetails = () => {
                     
                     <div className="col-md-6">
                         <div className="d-flex justify-content-center">
-                        {signleData.imageOne && <img src={`data:${imageOne.contentType};base64,${imageOne.img}`} class="card-img-top" style={{width:'25%'}} alt="..."/>}
+                        {signleData.imageOne && <img src={`http://localhost:5000/${imageOne}`} class="card-img-top" style={{width:'25%'}} alt="..."/>}
                         </div>
                     </div>
                     <div className="col-md-3">
@@ -91,7 +91,7 @@ const GuitarDetails = () => {
                                 style={{
                                     width: "18rem"
                                 }}>
-                                {signleData.imageOne && <img src={`data:${imageOne.contentType};base64,${imageOne.img}`} class="card-img-top" alt="..."/>}
+                                {signleData.imageOne && <img src={`http://localhost:5000/${imageOne}`} class="card-img-top" alt="..."/>}
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>
@@ -104,7 +104,7 @@ const GuitarDetails = () => {
                                 style={{
                                     width: "18rem"
                                 }}>
-                                {signleData.imageTwo && <img src={`data:${imageTwo.contentType};base64,${imageTwo.img}`} class="card-img-top" alt="..."/>}
+                                {signleData.imageTwo && <img src={`http://localhost:5000/${imageTwo}`} class="card-img-top" alt="..."/>}
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>
@@ -117,7 +117,7 @@ const GuitarDetails = () => {
                                 style={{
                                     width: "18rem"
                                 }}>
-                               {signleData.imageThree && <img src={`data:${imageThree.contentType};base64,${imageThree.img}`} class="card-img-top" alt="..."/>}
+                               {signleData.imageThree && <img src={`http://localhost:5000/${imageOne}`} class="card-img-top" alt="..."/>}
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make
                                         up the bulk of the card's content.</p>
@@ -130,7 +130,11 @@ const GuitarDetails = () => {
                 <h2 className="details-title mt-3">GUITARS VIDEO</h2>
                 <div className="video-container py-5">
 
-                <iframe width="560" height="315" src={`${youtubeLink}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {
+                    <div>
+                    <iframe width="560" height="315" src={youtubeLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                }
                 </div>
                 <h2 className="details-title">Standard Specs</h2>
                 <div className="details-container py-2">
@@ -266,7 +270,7 @@ const GuitarDetails = () => {
                     </div>
                 </div>
             </div>
-            <Contact/>
+           
             <Footer/>
         </div>
     );
