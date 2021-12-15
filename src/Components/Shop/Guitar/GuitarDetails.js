@@ -79,7 +79,7 @@ const GuitarDetails = () => {
                     </div>
                 </div>
                 <div className="details-text-container">
-                    <p className="details-p">{description}</p>
+                    <p className="p">{description}</p>
                 </div>
                 <div className="container">
                     <h2 className="details-title">Gallery</h2>
@@ -128,7 +128,7 @@ const GuitarDetails = () => {
                     </div>
                 </div>
                 <h2 className="details-title mt-3">GUITARS VIDEO</h2>
-                <div className="video-container py-5">
+                <div className="video-container">
 
                 {
                     <div>

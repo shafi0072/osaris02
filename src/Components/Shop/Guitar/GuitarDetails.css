@@ -63,9 +63,9 @@
     outline: 2px solid rgb(87, 87, 255);
 }
 .video-container{
-    width: 75%;
-    margin: 0 auto;
-    height: 70vh;
+    width: 50%;
+    margin: 38px auto;
+    height: 36vh;
 }
 .video{
     width: 100%;
