@@ -4,19 +4,16 @@ import { useParams } from 'react-router-dom';
 const BuilderDetailsPage = () => {
     const {id} = useParams();
     const [singleData, setSingleData] = useState([]);
-
-
-
     useEffect(() => {
         fetch(`http://localhost:5000/builder/${id}`)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setSingleData(data))
         .catch(err => console.log(err))
     }, [id])
     
     return (
         <div>
-            <h1>Hello its page admin Details</h1>
+            <h1>Details about <span>{singleData[0].fullName}</span> Order</h1>
         </div>
     );
 };

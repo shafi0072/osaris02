@@ -20,6 +20,9 @@
 }
 .admin-tbody td{
     padding: .5% 0;
+    background-color: black;
+    color: white;
+    border: 1px solid #dc3545;
 }
 .moveon{
     text-align: center;
@@ -30,4 +33,5 @@
     width: 15%!important;
     height: 17%!important;
     padding: 1%;
+    cursor: pointer;
 }

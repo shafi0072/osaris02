@@ -169,7 +169,6 @@ const Guitar = () => {
                 <div className="admin-button-container">
                     <button type="submit" class="btn btn-primary admin-submit">Submit Now</button>
                 </div>
-                
             </form>
         </div>
     );

@@ -6,10 +6,10 @@ const BuilderCategoryAdmin = (props) => {
     return (
             <tbody>
                 <tr className='admin-tbody'>
-                    <td>Raktim</td>
-                    <td>01717330748</td>
-                    <td>hol254@gmail.com</td>
-                    <td className='moveon'><ArrowForwardIosIcon className='admin-icon bg-dark'/></td>
+                    <td>{props.data.fullName}</td>
+                    <td>{props.data.Phone}</td>
+                    <td>{props.data.email}</td>
+                    <td className='moveon'><Link to={`/adminPanel/${props.data._id}`}><ArrowForwardIosIcon className='admin-icon bg-dark'/></Link></td>
                 </tr>
             </tbody>
             
