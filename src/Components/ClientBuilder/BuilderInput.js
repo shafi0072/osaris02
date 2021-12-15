@@ -820,10 +820,14 @@ const BuilderInput = () => {
                 </div>
                 
                </div>
+
+
+               <div className='text-center'>
+                   <h1 className='first-h1 pt-5'>Contact Info</h1>
+               </div>
                <div className="row">
-               <div class="col-md-6">
+               <div class="col-md-6 contact-name">
                     <div class="row">
-                    <h1 className="second-h1" >Contract Information</h1>
                         <div class="line">
                             <label for="Neck-Construction"><h6 class="head">Full Name</h6></label>
                             <input type="text" class="Selection" placeholder="Enter your Full Name" name="fullName" onChange={handlerContractOnChange}/>
@@ -853,17 +857,24 @@ const BuilderInput = () => {
                 
                     <div>
                     <label for="Strap"><h6 class="head">Special Note</h6></label>
-                    <textarea className="textarea"  id="" cols="50" rows="15" name="SpecialNote" onChange={handlerContractOnChange}></textarea>
+                    <textarea className="textarea"  id="" cols="50" rows="10" name="SpecialNote" onChange={handlerContractOnChange}></textarea>
                     </div>
                 </div>
                </div>
+
+
+
+
+
+
+
             </div>
             <div className="row mt-5">
                 <div className="col-md-12 d-flex justify-content-center">
                 <button className="btn btn-danger Selection" style={{background:'#a3102d', border:'none'}} type='submit'>Submit</button>
                 
                 </div>
-                <p className="text-center mt-3">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur <br />
+                <p className="text-center mt-3 mb-5">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur <br />
 There is no one who loves pain itself, who seeks after it and wants to have it, simply</p>
             </div>
         </form>

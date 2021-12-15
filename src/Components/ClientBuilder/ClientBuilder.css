@@ -84,7 +84,6 @@
 
 .BuilderInput{
     background-color: black;
-    height: 6000px;
     width: 100%;
     color: white;
     padding-top: 100px;
@@ -100,40 +99,59 @@
     text-align: center;
 }
 .second-h1{
-    padding-top: 100px;
-    padding-bottom: 10px;
+    padding-top: 60px;
+    padding-bottom: 15px;
     width: 100%;
-    border-bottom: 10px solid #a3102d;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    position: relative;
+    margin-bottom: 7%;
 }
-
+.second-h1::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 115%;
+    height: 8px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #a3102d;
+    
+}
 
 .head{
     font-size: 20px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 35px;
+    
 
 }
 
 .line{
-    border-bottom: 1px solid white; 
+    padding: 3% 0;
+    position: relative;
 }
+.line::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 115%;
+    height: 2px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+}
+
 
 .Selection{
 
     font-size: 17px;
-    height: 50px;
     text-align: center;
-    background-color: black;
+    background-color:#484444;
     color: white;
     border-radius: 10px;
-    border-color: white;
-    border-width: 3px;
+    padding: 1.4% 1%;
     width: 60%;
+    border: none;
     float: right;
-    margin-top: 20px;
 
 
 }
@@ -169,5 +187,8 @@
  .customButton{
      width: 100%;
      border-radius: 20px!important;
+ }
+ .contact-name{
+     margin-top: 5%;
  }
 
